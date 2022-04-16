@@ -1,0 +1,110 @@
+2022-04-16 11:22:26 pid:35152 Workerman[start.php] start in DEBUG mode
+2022-04-16 11:40:34 pid:35152 Workerman[start.php] stopping ...
+2022-04-16 11:40:34 pid:35152 Workerman[start.php] has been stopped
+2022-04-16 11:40:35 pid:56099 Workerman[start.php] start in DEBUG mode
+2022-04-16 11:41:37 pid:56099 Workerman[start.php] stopping ...
+2022-04-16 11:41:37 pid:56099 Workerman[start.php] has been stopped
+2022-04-16 11:41:38 pid:58113 Workerman[start.php] start in DEBUG mode
+2022-04-16 11:43:18 pid:58113 Workerman[start.php] stopping ...
+2022-04-16 11:43:18 pid:58113 Workerman[start.php] has been stopped
+2022-04-16 11:43:19 pid:61366 Workerman[start.php] start in DEBUG mode
+2022-04-16 11:48:43 pid:61366 Workerman[start.php] stopping ...
+2022-04-16 11:48:43 pid:61366 Workerman[start.php] has been stopped
+2022-04-16 11:48:47 pid:72689 Workerman[start.php] start in DEBUG mode
+2022-04-16 11:59:44 pid:72689 Workerman[start.php] stopping ...
+2022-04-16 11:59:44 pid:72689 Workerman[start.php] has been stopped
+2022-04-16 11:59:45 pid:84746 Workerman[start.php] start in DEBUG mode
+2022-04-16 12:00:10 pid:84746 Workerman[start.php] stopping ...
+2022-04-16 12:00:10 pid:84746 Workerman[start.php] has been stopped
+2022-04-16 12:00:10 pid:85172 Workerman[start.php] start in DEBUG mode
+2022-04-16 12:00:21 pid:85172 Workerman[start.php] stopping ...
+2022-04-16 12:00:21 pid:85172 Workerman[start.php] has been stopped
+2022-04-16 12:00:21 pid:85297 Workerman[start.php] start in DEBUG mode
+2022-04-16 12:01:28 pid:85297 Workerman[start.php] stopping ...
+2022-04-16 12:01:28 pid:85297 Workerman[start.php] has been stopped
+2022-04-16 12:01:28 pid:86601 Workerman[start.php] start in DEBUG mode
+2022-04-16 12:03:20 pid:86601 Workerman[start.php] stopping ...
+2022-04-16 12:03:20 pid:86601 Workerman[start.php] has been stopped
+2022-04-16 12:03:22 pid:88597 Workerman[start.php] start in DEBUG mode
+2022-04-16 12:04:00 pid:88597 Workerman[start.php] stopping ...
+2022-04-16 12:04:00 pid:88597 Workerman[start.php] has been stopped
+2022-04-16 12:04:00 pid:89181 Workerman[start.php] start in DEBUG mode
+2022-04-16 12:04:38 pid:89181 Workerman[start.php] stopping ...
+2022-04-16 12:04:38 pid:89181 Workerman[start.php] has been stopped
+2022-04-16 12:04:39 pid:89626 Workerman[start.php] start in DEBUG mode
+2022-04-16 12:06:27 pid:89626 Workerman[start.php] stopping ...
+2022-04-16 12:06:27 pid:89626 Workerman[start.php] has been stopped
+2022-04-16 12:06:28 pid:91054 Workerman[start.php] start in DEBUG mode
+2022-04-16 12:06:28 pid:91056 Error: Cannot use object of type stdClass as array in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b57000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #42)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-04-16 12:06:28 pid:91054 worker[YourAppBusinessWorker:91056] exit with status 64000
+2022-04-16 12:06:28 pid:91064 Error: Cannot use object of type stdClass as array in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #41)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 12:06:28 pid:91054 worker[YourAppBusinessWorker:91064] exit with status 64000
+2022-04-16 12:06:29 pid:91058 Error: Cannot use object of type stdClass as array in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #40)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-04-16 12:06:29 pid:91054 worker[YourAppBusinessWorker:91058] exit with status 64000
+2022-04-16 12:06:30 pid:91054 Workerman[start.php] stopping ...
+2022-04-16 12:06:30 pid:91054 Workerman[start.php] has been stopped
+2022-04-16 12:06:41 pid:91233 Workerman[start.php] start in DEBUG mode
+2022-04-16 12:07:13 pid:91233 Workerman[start.php] stopping ...
+2022-04-16 12:07:13 pid:91233 Workerman[start.php] has been stopped
+2022-04-16 12:07:13 pid:91896 Workerman[start.php] start in DEBUG mode
+2022-04-16 12:08:14 pid:91896 Workerman[start.php] stopping ...
+2022-04-16 12:08:14 pid:91896 Workerman[start.php] has been stopped
+2022-04-16 12:08:14 pid:93033 Workerman[start.php] start in DEBUG mode
+2022-04-16 12:08:52 pid:93033 Workerman[start.php] stopping ...
+2022-04-16 12:08:52 pid:93033 Workerman[start.php] has been stopped
+2022-04-16 12:08:52 pid:93694 Workerman[start.php] start in DEBUG mode
+2022-04-16 12:09:28 pid:93694 Workerman[start.php] stopping ...
+2022-04-16 12:09:28 pid:93694 Workerman[start.php] has been stopped
+2022-04-16 12:09:28 pid:94331 Workerman[start.php] start in DEBUG mode
+2022-04-16 12:10:34 pid:94331 Workerman[start.php] stopping ...
+2022-04-16 12:10:34 pid:94331 Workerman[start.php] has been stopped
+2022-04-16 12:10:34 pid:95236 Workerman[start.php] start in DEBUG mode
+2022-04-16 12:11:13 pid:95236 Workerman[start.php] stopping ...
+2022-04-16 12:11:13 pid:95236 Workerman[start.php] has been stopped
+2022-04-16 12:11:13 pid:95688 Workerman[start.php] start in DEBUG mode
+2022-04-16 12:15:01 pid:95688 Workerman[start.php] stopping ...
+2022-04-16 12:15:01 pid:95688 Workerman[start.php] has been stopped
+2022-04-16 12:15:01 pid:98581 Workerman[start.php] start in DEBUG mode
+2022-04-16 12:20:27 pid:98581 Workerman[start.php] stopping ...
+2022-04-16 12:20:27 pid:98581 Workerman[start.php] has been stopped
