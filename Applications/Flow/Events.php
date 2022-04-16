@@ -19,6 +19,7 @@
  */
 //declare(ticks=1);
 
+use Workerman\Lib\Timer;
 use \GatewayWorker\Lib\Gateway;
 
 /**
@@ -36,6 +37,11 @@ class Events
      */
     public static function onConnect($client_id)
     {
+        $auth_timer_id = Timer::add(30, function($client_id){
+            Gateway::closeClient($client_id);
+        }, array($client_id), false);
+        Gateway::updateSession($client_id, array('auth_timer_id' => $auth_timer_id));
+        
         // 向当前client_id发送数据 
         // Gateway::sendToClient($client_id, "Hello $client_id\r\n");
         // 向所有人发送
@@ -45,12 +51,39 @@ class Events
    /**
     * 当客户端发来消息时触发
     * @param int $client_id 连接id
-    * @param mixed $message 具体消息
+    * @param mixed $msg 具体消息
     */
-   public static function onMessage($client_id, $message)
+   public static function onMessage($client_id, $msg)
    {
+        $_SESSION = Gateway::getSession($client_id);
+
+        $msg = json_decode($msg);
+
+        if ($msg->event !== 'login' || $_SESSION['auth_timer_id'] !== null) {
+
+        }
+
+        switch($msg->event)
+        {
+            case 'login':
+
+                if ($msg->data == 'edge_flow') {
+                    Gateway::closeCurrentClient();
+                }
+                self::send($client_id, 'login_success', $client_id);
+                // 记录session，表明认证成功
+                $_SESSION['login'] = true;
+                break;
+            // 30秒后客户端发来心跳回复时，仍然没认证，则关闭连接
+            case 'pong':
+                if(empty($_SESSION['login']))
+                {
+                     Gateway::closeClient($client_id);
+                }
+        }
+
         // 向所有人发送 
-        Gateway::sendToAll("$client_id said $message\r\n");
+        // Gateway::sendToAll("$client_id said $message\r\n");
    }
    
    /**
@@ -60,6 +93,14 @@ class Events
    public static function onClose($client_id)
    {
        // 向所有人发送 
-       GateWay::sendToAll("$client_id logout\r\n");
+    //    GateWay::sendToAll("$client_id logout\r\n");
+   }
+
+   public static function send($client_id, $event, $msg) {
+       $data = [
+           'event' => $event,
+           'data' => $msg
+       ];
+       Gateway::sendToClient($client_id, json_encode($data));
    }
 }

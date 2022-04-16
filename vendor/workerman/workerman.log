@@ -108,3 +108,270 @@ Stack trace:
 2022-04-16 12:15:01 pid:98581 Workerman[start.php] start in DEBUG mode
 2022-04-16 12:20:27 pid:98581 Workerman[start.php] stopping ...
 2022-04-16 12:20:27 pid:98581 Workerman[start.php] has been stopped
+2022-04-16 12:26:51 pid:14582 Workerman[start.php] start in DEBUG mode
+2022-04-16 12:26:52 pid:14591 ParseError: syntax error, unexpected token "}" in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:49
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(226): is_callable('Events::onWorke...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2418): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#8 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#9 {main}
+2022-04-16 12:26:52 pid:14590 ParseError: syntax error, unexpected token "}" in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:49
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(226): is_callable('Events::onWorke...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2418): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#8 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#9 {main}
+2022-04-16 12:26:52 pid:14589 ParseError: syntax error, unexpected token "}" in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:49
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(226): is_callable('Events::onWorke...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2418): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#8 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#9 {main}
+2022-04-16 12:26:52 pid:14592 ParseError: syntax error, unexpected token "}" in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:49
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(226): is_callable('Events::onWorke...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2418): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#8 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#9 {main}
+2022-04-16 12:26:52 pid:14582 worker[YourAppBusinessWorker:14591] exit with status 64000
+2022-04-16 12:26:52 pid:14582 worker[YourAppBusinessWorker:14590] exit with status 64000
+2022-04-16 12:26:52 pid:14582 worker[YourAppBusinessWorker:14589] exit with status 64000
+2022-04-16 12:26:52 pid:14582 worker[YourAppBusinessWorker:14592] exit with status 64000
+2022-04-16 12:26:53 pid:14607 ParseError: syntax error, unexpected token "}" in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:49
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(226): is_callable('Events::onWorke...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2418): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-04-16 12:26:53 pid:14608 ParseError: syntax error, unexpected token "}" in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:49
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(226): is_callable('Events::onWorke...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2418): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-04-16 12:26:53 pid:14609 ParseError: syntax error, unexpected token "}" in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:49
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(226): is_callable('Events::onWorke...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2418): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-04-16 12:26:53 pid:14606 ParseError: syntax error, unexpected token "}" in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:49
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(226): is_callable('Events::onWorke...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2418): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-04-16 12:26:53 pid:14582 worker[YourAppBusinessWorker:14608] exit with status 64000
+2022-04-16 12:26:53 pid:14582 worker[YourAppBusinessWorker:14607] exit with status 64000
+2022-04-16 12:26:53 pid:14582 worker[YourAppBusinessWorker:14606] exit with status 64000
+2022-04-16 12:26:53 pid:14582 worker[YourAppBusinessWorker:14609] exit with status 64000
+2022-04-16 12:26:54 pid:14614 ParseError: syntax error, unexpected token "}" in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:49
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(226): is_callable('Events::onWorke...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2418): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-04-16 12:26:54 pid:14616 ParseError: syntax error, unexpected token "}" in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:49
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(226): is_callable('Events::onWorke...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2418): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-04-16 12:26:54 pid:14615 ParseError: syntax error, unexpected token "}" in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:49
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(226): is_callable('Events::onWorke...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2418): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-04-16 12:26:54 pid:14613 ParseError: syntax error, unexpected token "}" in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:49
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(226): is_callable('Events::onWorke...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2418): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-04-16 12:26:54 pid:14582 worker[YourAppBusinessWorker:14616] exit with status 64000
+2022-04-16 12:26:54 pid:14582 worker[YourAppBusinessWorker:14614] exit with status 64000
+2022-04-16 12:26:54 pid:14582 worker[YourAppBusinessWorker:14615] exit with status 64000
+2022-04-16 12:26:54 pid:14582 worker[YourAppBusinessWorker:14613] exit with status 64000
+2022-04-16 12:26:55 pid:14582 Workerman[start.php] stopping ...
+2022-04-16 12:26:55 pid:14618 ParseError: syntax error, unexpected token "}" in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:49
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(226): is_callable('Events::onWorke...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2418): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-04-16 12:26:55 pid:14620 ParseError: syntax error, unexpected token "}" in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:49
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(226): is_callable('Events::onWorke...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2418): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-04-16 12:26:55 pid:14619 ParseError: syntax error, unexpected token "}" in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:49
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(226): is_callable('Events::onWorke...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2418): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-04-16 12:26:55 pid:14621 ParseError: syntax error, unexpected token "}" in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:49
+Stack trace:
+#0 [internal function]: Workerman\Autoloader::loadByNamespace('Events')
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(226): is_callable('Events::onWorke...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2418): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-04-16 12:26:55 pid:14582 worker[YourAppBusinessWorker:14618] exit with status 64000
+2022-04-16 12:26:55 pid:14582 worker[YourAppBusinessWorker:14620] exit with status 64000
+2022-04-16 12:26:55 pid:14582 worker[YourAppBusinessWorker:14619] exit with status 64000
+2022-04-16 12:26:55 pid:14582 worker[YourAppBusinessWorker:14621] exit with status 64000
+2022-04-16 12:26:55 pid:14582 Workerman[start.php] has been stopped
+2022-04-16 12:27:03 pid:14748 Workerman[start.php] start in DEBUG mode
+2022-04-16 12:27:25 pid:14748 Workerman[start.php] stopping ...
+2022-04-16 12:27:25 pid:14748 Workerman[start.php] has been stopped
+2022-04-16 12:27:25 pid:15410 Workerman[start.php] start in DEBUG mode
+2022-04-16 12:27:32 pid:15410 Workerman[start.php] reloading
+2022-04-16 12:27:38 pid:15410 Workerman[start.php] stopping ...
+2022-04-16 12:27:38 pid:15410 Workerman[start.php] has been stopped
+2022-04-16 12:27:38 pid:15719 Workerman[start.php] start in DEBUG mode
+2022-04-16 12:27:38 pid:15724 Error: Call to undefined function send() in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:70
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b55000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b55000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #41)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-04-16 12:27:38 pid:15719 worker[YourAppBusinessWorker:15724] exit with status 64000
+2022-04-16 12:27:47 pid:15719 Workerman[start.php] reloading
+2022-04-16 12:27:51 pid:15719 Workerman[start.php] reloading
+2022-04-16 12:27:52 pid:15719 Workerman[start.php] stopping ...
+2022-04-16 12:27:52 pid:15719 Workerman[start.php] has been stopped
+2022-04-16 12:27:52 pid:15922 Workerman[start.php] start in DEBUG mode
+2022-04-16 12:28:07 pid:15922 Workerman[start.php] stopping ...
+2022-04-16 12:28:07 pid:15922 Workerman[start.php] has been stopped
+2022-04-16 12:28:08 pid:16128 Workerman[start.php] start in DEBUG mode
+2022-04-16 12:28:52 pid:16128 Workerman[start.php] reloading
