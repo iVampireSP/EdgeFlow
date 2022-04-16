@@ -5,11 +5,14 @@
     "license" : "MIT",
     "require": {
         "workerman/gateway-worker" : ">=3.0.0",
-        "workerman/redis": "^1.0"
+        "workerman/redis": "^1.0",
+        "workerman/mysql": "^1.0",
+        "nesbot/carbon": "^2.57",
+        "illuminate/database": "^9.8"
     },
     "autoload": {
         "psr-4": {
-            "" : "./"
+            "Applications" : "./Applications"
         }
     }
 }

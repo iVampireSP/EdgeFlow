@@ -375,3 +375,1158 @@ Stack trace:
 2022-04-16 12:28:07 pid:15922 Workerman[start.php] has been stopped
 2022-04-16 12:28:08 pid:16128 Workerman[start.php] start in DEBUG mode
 2022-04-16 12:28:52 pid:16128 Workerman[start.php] reloading
+2022-04-16 12:29:37 pid:16128 Workerman[start.php] reloading
+2022-04-16 12:30:26 pid:16128 Workerman[start.php] reloading
+2022-04-16 12:30:39 pid:16128 Workerman[start.php] reloading
+2022-04-16 12:31:26 pid:16128 Workerman[start.php] reloading
+2022-04-16 12:31:29 pid:16128 Workerman[start.php] reloading
+2022-04-16 12:32:06 pid:16128 Workerman[start.php] reloading
+2022-04-16 12:32:09 pid:16128 Workerman[start.php] reloading
+2022-04-16 12:32:20 pid:16128 Workerman[start.php] reloading
+2022-04-16 12:32:29 pid:16128 Workerman[start.php] reloading
+2022-04-16 12:32:51 pid:16128 Workerman[start.php] reloading
+2022-04-16 12:32:55 pid:16128 Workerman[start.php] reloading
+2022-04-16 12:33:02 pid:16128 Workerman[start.php] reloading
+2022-04-16 12:33:05 pid:16128 Workerman[start.php] reloading
+2022-04-16 12:33:10 pid:16128 Workerman[start.php] reloading
+2022-04-16 12:33:13 pid:16128 Workerman[start.php] reloading
+2022-04-16 12:33:34 pid:16128 Workerman[start.php] reloading
+2022-04-16 12:33:53 pid:16128 Workerman[start.php] reloading
+2022-04-16 12:34:09 pid:16128 Workerman[start.php] reloading
+2022-04-16 12:34:22 pid:16128 Workerman[start.php] reloading
+2022-04-16 12:35:06 pid:16128 Workerman[start.php] reloading
+2022-04-16 12:35:16 pid:16128 Workerman[start.php] reloading
+2022-04-16 12:35:39 pid:16128 Workerman[start.php] reloading
+2022-04-16 12:35:47 pid:16128 Workerman[start.php] stopping ...
+2022-04-16 12:35:47 pid:16128 Workerman[start.php] has been stopped
+2022-04-16 12:36:01 pid:23418 Workerman[start.php] start in DEBUG mode
+2022-04-16 12:36:04 pid:23418 Workerman[start.php] reloading
+2022-04-16 12:36:07 pid:23418 Workerman[start.php] reloading
+2022-04-16 12:36:09 pid:23418 Workerman[start.php] stopping ...
+2022-04-16 12:36:09 pid:23418 Workerman[start.php] has been stopped
+2022-04-16 12:36:29 pid:23830 Workerman[start.php] start in DEBUG mode
+2022-04-16 12:36:47 pid:23830 Workerman[start.php] reloading
+2022-04-16 12:36:48 pid:23830 Workerman[start.php] stopping ...
+2022-04-16 12:36:48 pid:23830 Workerman[start.php] has been stopped
+2022-04-16 12:36:49 pid:24104 Workerman[start.php] start in DEBUG mode
+2022-04-16 12:36:55 pid:24104 Workerman[start.php] stopping ...
+2022-04-16 12:36:55 pid:24104 Workerman[start.php] has been stopped
+2022-04-16 12:36:57 pid:24406 Workerman[start.php] start in DEBUG mode
+2022-04-16 12:37:13 pid:24406 Workerman[start.php] reloading
+2022-04-16 12:37:30 pid:24406 Workerman[start.php] reloading
+2022-04-16 12:37:56 pid:24406 Workerman[start.php] reloading
+2022-04-16 12:55:41 pid:24406 Workerman[start.php] reloading
+2022-04-16 12:55:45 pid:24406 Workerman[start.php] reloading
+2022-04-16 12:55:47 pid:24406 Workerman[start.php] reloading
+2022-04-16 13:07:53 pid:24406 Workerman[start.php] reloading
+2022-04-16 13:08:53 pid:24406 Workerman[start.php] reloading
+2022-04-16 13:09:24 pid:24406 Workerman[start.php] reloading
+2022-04-16 13:09:40 pid:24406 Workerman[start.php] reloading
+2022-04-16 13:09:49 pid:24406 Workerman[start.php] reloading
+2022-04-16 13:09:50 pid:24406 Workerman[start.php] reloading
+2022-04-16 13:10:03 pid:24406 Workerman[start.php] reloading
+2022-04-16 13:10:24 pid:24406 Workerman[start.php] reloading
+2022-04-16 13:10:33 pid:24406 Workerman[start.php] reloading
+2022-04-16 13:10:39 pid:24406 Workerman[start.php] reloading
+2022-04-16 13:11:10 pid:24406 Workerman[start.php] stopping ...
+2022-04-16 13:11:10 pid:24406 Workerman[start.php] has been stopped
+2022-04-16 13:11:21 pid:49788 Workerman[start.php] start in DEBUG mode
+2022-04-16 13:11:45 pid:49788 Workerman[start.php] reloading
+2022-04-16 13:13:41 pid:49788 Workerman[start.php] reloading
+2022-04-16 13:13:52 pid:49788 Workerman[start.php] reloading
+2022-04-16 13:13:55 pid:49788 Workerman[start.php] reloading
+2022-04-16 13:13:58 pid:49788 Workerman[start.php] reloading
+2022-04-16 13:14:19 pid:49788 Workerman[start.php] reloading
+2022-04-16 13:14:40 pid:49788 Workerman[start.php] reloading
+2022-04-16 13:14:47 pid:49788 Workerman[start.php] reloading
+2022-04-16 13:14:49 pid:49788 Workerman[start.php] stopping ...
+2022-04-16 13:14:49 pid:49788 Workerman[start.php] has been stopped
+2022-04-16 13:14:50 pid:52469 Workerman[start.php] start in DEBUG mode
+2022-04-16 13:15:16 pid:52469 Workerman[start.php] reloading
+2022-04-16 13:15:17 pid:52469 Workerman[start.php] stopping ...
+2022-04-16 13:15:17 pid:52469 Workerman[start.php] has been stopped
+2022-04-16 13:21:54 pid:57744 Workerman[start.php] start in DEBUG mode
+2022-04-16 13:22:04 pid:57744 Workerman[start.php] reloading
+2022-04-16 13:22:14 pid:57744 Workerman[start.php] reloading
+2022-04-16 13:22:20 pid:57744 Workerman[start.php] reloading
+2022-04-16 13:22:31 pid:57744 Workerman[start.php] reloading
+2022-04-16 13:22:51 pid:57744 Workerman[start.php] reloading
+2022-04-16 13:23:17 pid:57744 Workerman[start.php] reloading
+2022-04-16 13:23:39 pid:57744 Workerman[start.php] reloading
+2022-04-16 13:23:45 pid:57744 Workerman[start.php] reloading
+2022-04-16 13:23:49 pid:57744 Workerman[start.php] reloading
+2022-04-16 13:23:50 pid:57744 Workerman[start.php] stopping ...
+2022-04-16 13:23:50 pid:57744 Workerman[start.php] has been stopped
+2022-04-16 13:23:50 pid:59269 Workerman[start.php] start in DEBUG mode
+2022-04-16 13:23:52 pid:59272 Error: Call to a member function toArray() on null in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:86
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #79)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-04-16 13:23:52 pid:59269 worker[YourAppBusinessWorker:59272] exit with status 64000
+2022-04-16 13:24:04 pid:59269 Workerman[start.php] reloading
+2022-04-16 13:24:05 pid:59269 Workerman[start.php] stopping ...
+2022-04-16 13:24:05 pid:59269 Workerman[start.php] has been stopped
+2022-04-16 13:24:05 pid:59597 Workerman[start.php] start in DEBUG mode
+2022-04-16 13:24:22 pid:59597 Workerman[start.php] reloading
+2022-04-16 13:24:22 pid:59597 Workerman[start.php] stopping ...
+2022-04-16 13:24:22 pid:59597 Workerman[start.php] has been stopped
+2022-04-16 13:24:22 pid:59987 Workerman[start.php] start in DEBUG mode
+2022-04-16 13:24:39 pid:59987 Workerman[start.php] reloading
+2022-04-16 13:24:39 pid:59987 Workerman[start.php] stopping ...
+2022-04-16 13:24:39 pid:59987 Workerman[start.php] has been stopped
+2022-04-16 13:24:40 pid:60274 Workerman[start.php] start in DEBUG mode
+2022-04-16 13:25:34 pid:60274 Workerman[start.php] reloading
+2022-04-16 13:25:44 pid:60274 Workerman[start.php] reloading
+2022-04-16 13:25:47 pid:60274 Workerman[start.php] stopping ...
+2022-04-16 13:25:47 pid:60274 Workerman[start.php] has been stopped
+2022-04-16 13:25:48 pid:61492 Workerman[start.php] start in DEBUG mode
+2022-04-16 13:25:55 pid:61492 Workerman[start.php] reloading
+2022-04-16 13:31:38 pid:61492 Workerman[start.php] reloading
+2022-04-16 13:31:39 pid:61492 Workerman[start.php] reloading
+2022-04-16 13:31:47 pid:61492 Workerman[start.php] reloading
+2022-04-16 13:32:07 pid:61492 Workerman[start.php] reloading
+2022-04-16 13:32:23 pid:61492 Workerman[start.php] reloading
+2022-04-16 13:33:04 pid:61492 Workerman[start.php] reloading
+2022-04-16 13:33:11 pid:61492 Workerman[start.php] reloading
+2022-04-16 13:33:15 pid:61492 Workerman[start.php] reloading
+2022-04-16 13:33:16 pid:61492 Workerman[start.php] reloading
+2022-04-16 13:33:18 pid:61492 Workerman[start.php] reloading
+2022-04-16 13:33:24 pid:61492 Workerman[start.php] reloading
+2022-04-16 13:33:33 pid:61492 Workerman[start.php] reloading
+2022-04-16 13:33:54 pid:61492 Workerman[start.php] reloading
+2022-04-16 13:33:58 pid:61492 Workerman[start.php] reloading
+2022-04-16 13:33:59 pid:61492 Workerman[start.php] stopping ...
+2022-04-16 13:33:59 pid:61492 Workerman[start.php] has been stopped
+2022-04-16 13:33:59 pid:67666 Workerman[start.php] start in DEBUG mode
+2022-04-16 13:33:59 pid:67669 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #80)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-04-16 13:33:59 pid:67666 worker[YourAppBusinessWorker:67669] exit with status 64000
+2022-04-16 13:34:00 pid:67671 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b57000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #82)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-04-16 13:34:00 pid:67666 worker[YourAppBusinessWorker:67671] exit with status 64000
+2022-04-16 13:34:01 pid:67668 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b57000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #82)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-04-16 13:34:01 pid:67666 worker[YourAppBusinessWorker:67668] exit with status 64000
+2022-04-16 13:34:02 pid:67677 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b57000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #83)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:02 pid:67666 worker[YourAppBusinessWorker:67677] exit with status 64000
+2022-04-16 13:34:03 pid:67670 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b57000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #82)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-04-16 13:34:03 pid:67666 worker[YourAppBusinessWorker:67670] exit with status 64000
+2022-04-16 13:34:04 pid:67708 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #83)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:04 pid:67666 worker[YourAppBusinessWorker:67708] exit with status 64000
+2022-04-16 13:34:05 pid:67732 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b57000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #85)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:05 pid:67666 worker[YourAppBusinessWorker:67732] exit with status 64000
+2022-04-16 13:34:06 pid:67744 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b57000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #88)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:06 pid:67666 worker[YourAppBusinessWorker:67744] exit with status 64000
+2022-04-16 13:34:07 pid:67797 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #87)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:07 pid:67666 worker[YourAppBusinessWorker:67797] exit with status 64000
+2022-04-16 13:34:08 pid:67807 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #89)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:08 pid:67666 worker[YourAppBusinessWorker:67807] exit with status 64000
+2022-04-16 13:34:09 pid:67743 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b55000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b55000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #84)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:09 pid:67666 worker[YourAppBusinessWorker:67743] exit with status 64000
+2022-04-16 13:34:10 pid:67742 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #84)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:10 pid:67666 worker[YourAppBusinessWorker:67742] exit with status 64000
+2022-04-16 13:34:11 pid:67812 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b55000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b55000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #89)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:11 pid:67666 worker[YourAppBusinessWorker:67812] exit with status 64000
+2022-04-16 13:34:12 pid:67800 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #88)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:12 pid:67666 worker[YourAppBusinessWorker:67800] exit with status 64000
+2022-04-16 13:34:13 pid:67866 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #93)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:13 pid:67666 worker[YourAppBusinessWorker:67866] exit with status 64000
+2022-04-16 13:34:14 pid:67869 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #93)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:14 pid:67666 worker[YourAppBusinessWorker:67869] exit with status 64000
+2022-04-16 13:34:15 pid:67838 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #91)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:15 pid:67666 worker[YourAppBusinessWorker:67838] exit with status 64000
+2022-04-16 13:34:16 pid:67876 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #94)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:16 pid:67666 worker[YourAppBusinessWorker:67876] exit with status 64000
+2022-04-16 13:34:17 pid:67877 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b55000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b55000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #94)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:17 pid:67666 worker[YourAppBusinessWorker:67877] exit with status 64000
+2022-04-16 13:34:18 pid:67937 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b55000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b55000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #97)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:18 pid:67666 worker[YourAppBusinessWorker:67937] exit with status 64000
+2022-04-16 13:34:19 pid:67924 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b55000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b55000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #95)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:19 pid:67666 worker[YourAppBusinessWorker:67924] exit with status 64000
+2022-04-16 13:34:20 pid:68010 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #101)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:20 pid:67666 worker[YourAppBusinessWorker:68010] exit with status 64000
+2022-04-16 13:34:21 pid:68011 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #102)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:21 pid:67666 worker[YourAppBusinessWorker:68011] exit with status 64000
+2022-04-16 13:34:22 pid:67932 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b55000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b55000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #96)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:22 pid:67666 worker[YourAppBusinessWorker:67932] exit with status 64000
+2022-04-16 13:34:23 pid:68021 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b55000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b55000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #103)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:23 pid:67666 worker[YourAppBusinessWorker:68021] exit with status 64000
+2022-04-16 13:34:24 pid:68052 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #105)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:24 pid:67666 worker[YourAppBusinessWorker:68052] exit with status 64000
+2022-04-16 13:34:25 pid:67955 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b57000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #101)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:25 pid:67666 worker[YourAppBusinessWorker:67955] exit with status 64000
+2022-04-16 13:34:26 pid:68014 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b57000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #105)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:26 pid:67666 worker[YourAppBusinessWorker:68014] exit with status 64000
+2022-04-16 13:34:27 pid:68076 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b57000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #109)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:27 pid:67666 worker[YourAppBusinessWorker:68076] exit with status 64000
+2022-04-16 13:34:28 pid:68074 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b57000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #108)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:28 pid:67666 worker[YourAppBusinessWorker:68074] exit with status 64000
+2022-04-16 13:34:29 pid:68080 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #109)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:29 pid:67666 worker[YourAppBusinessWorker:68080] exit with status 64000
+2022-04-16 13:34:30 pid:68089 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b57000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #111)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:30 pid:67666 worker[YourAppBusinessWorker:68089] exit with status 64000
+2022-04-16 13:34:31 pid:68150 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #113)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:31 pid:67666 worker[YourAppBusinessWorker:68150] exit with status 64000
+2022-04-16 13:34:32 pid:67958 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b57000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #102)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:32 pid:67666 worker[YourAppBusinessWorker:67958] exit with status 64000
+2022-04-16 13:34:33 pid:68181 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b55000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b55000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #113)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:33 pid:67666 worker[YourAppBusinessWorker:68181] exit with status 64000
+2022-04-16 13:34:34 pid:68142 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b57000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #112)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:34 pid:67666 worker[YourAppBusinessWorker:68142] exit with status 64000
+2022-04-16 13:34:35 pid:68149 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b55000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b55000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #110)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:35 pid:67666 worker[YourAppBusinessWorker:68149] exit with status 64000
+2022-04-16 13:34:36 pid:68217 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b57000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #119)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:36 pid:67666 worker[YourAppBusinessWorker:68217] exit with status 64000
+2022-04-16 13:34:37 pid:68155 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b57000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #115)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:37 pid:67666 worker[YourAppBusinessWorker:68155] exit with status 64000
+2022-04-16 13:34:38 pid:68262 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b57000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #121)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:38 pid:67666 worker[YourAppBusinessWorker:68262] exit with status 64000
+2022-04-16 13:34:38 pid:67666 Workerman[start.php] reloading
+2022-04-16 13:34:39 pid:68283 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b55000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b55000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #120)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:39 pid:67666 worker[YourAppBusinessWorker:68283] exit with status 64000
+2022-04-16 13:34:40 pid:68286 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #122)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:40 pid:67666 worker[YourAppBusinessWorker:68286] exit with status 64000
+2022-04-16 13:34:41 pid:68288 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b55000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b55000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #122)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:41 pid:67666 worker[YourAppBusinessWorker:68288] exit with status 64000
+2022-04-16 13:34:42 pid:68287 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b55000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b55000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #121)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:42 pid:67666 worker[YourAppBusinessWorker:68287] exit with status 64000
+2022-04-16 13:34:43 pid:68285 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b55000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b55000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #120)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:43 pid:67666 worker[YourAppBusinessWorker:68285] exit with status 64000
+2022-04-16 13:34:44 pid:68346 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #126)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:44 pid:67666 worker[YourAppBusinessWorker:68346] exit with status 64000
+2022-04-16 13:34:45 pid:68354 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #127)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:45 pid:67666 worker[YourAppBusinessWorker:68354] exit with status 64000
+2022-04-16 13:34:46 pid:68294 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #124)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:46 pid:67666 worker[YourAppBusinessWorker:68294] exit with status 64000
+2022-04-16 13:34:47 pid:68391 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #129)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:47 pid:67666 worker[YourAppBusinessWorker:68391] exit with status 64000
+2022-04-16 13:34:48 pid:68284 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b55000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b55000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #120)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:48 pid:67666 worker[YourAppBusinessWorker:68284] exit with status 64000
+2022-04-16 13:34:49 pid:68357 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b57000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #130)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:49 pid:67666 worker[YourAppBusinessWorker:68357] exit with status 64000
+2022-04-16 13:34:49 pid:67666 Workerman[start.php] reloading
+2022-04-16 13:34:50 pid:68425 Error: Class "App\Models\Server" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:82
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b57000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', '{"event":"login...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #135)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 13:34:50 pid:67666 worker[YourAppBusinessWorker:68425] exit with status 64000
+2022-04-16 13:34:51 pid:67666 Workerman[start.php] stopping ...
+2022-04-16 13:34:51 pid:67666 Workerman[start.php] has been stopped
+2022-04-16 13:34:51 pid:68486 Workerman[start.php] start in DEBUG mode
+2022-04-16 13:34:56 pid:68489 Error: Object of class stdClass could not be converted to string in /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php:651
+Stack trace:
+#0 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(651): PDOStatement->bindValue(1, Object(stdClass), 2)
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(400): Illuminate\Database\Connection->bindValues(Object(PDOStatement), Array)
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(738): Illuminate\Database\Connection->Illuminate\Database\{closure}('select * from `...', Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(705): Illuminate\Database\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(405): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(2607): Illuminate\Database\Connection->select('select * from `...', Array, true)
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(2595): Illuminate\Database\Query\Builder->runSelect()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(3129): Illuminate\Database\Query\Builder->Illuminate\Database\Query\{closure}()
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(2596): Illuminate\Database\Query\Builder->onceWithColumns(Array, Object(Closure))
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Concerns/BuildsQueries.php(296): Illuminate\Database\Query\Builder->get(Array)
+#10 /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php(99): Illuminate\Database\Query\Builder->first()
+#11 [internal function]: Events::onMessage('7f0000010b55000...', Object(stdClass))
+#12 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b55000...', '{"event":"serve...')
+#13 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#14 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #80)
+#15 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#16 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#17 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#18 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#19 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#20 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#21 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#22 {main}
+2022-04-16 13:34:56 pid:68486 worker[YourAppBusinessWorker:68489] exit with status 64000
+2022-04-16 13:36:06 pid:68486 Workerman[start.php] reloading
+2022-04-16 13:36:30 pid:68486 Workerman[start.php] reloading
+2022-04-16 13:36:33 pid:68486 Workerman[start.php] reloading
+2022-04-16 13:36:45 pid:68486 Workerman[start.php] reloading
+2022-04-16 13:36:57 pid:68486 Workerman[start.php] reloading
+2022-04-16 13:37:18 pid:68486 Workerman[start.php] reloading
+2022-04-16 13:37:41 pid:68486 Workerman[start.php] reloading
+2022-04-16 13:37:51 pid:68486 Workerman[start.php] reloading
+2022-04-16 13:38:01 pid:68486 Workerman[start.php] reloading
+2022-04-16 13:38:03 pid:68486 Workerman[start.php] stopping ...
+2022-04-16 13:38:03 pid:68486 Workerman[start.php] has been stopped
+2022-04-16 13:38:03 pid:71003 Workerman[start.php] start in DEBUG mode
+2022-04-16 13:38:04 pid:71009 PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'servers.updated_at' in 'field list' in /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php:551
+Stack trace:
+#0 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(551): PDO->prepare('update `servers...')
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(738): Illuminate\Database\Connection->Illuminate\Database\{closure}('update `servers...', Array)
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(705): Illuminate\Database\Connection->runQueryCallback('update `servers...', Array, Object(Closure))
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(562): Illuminate\Database\Connection->run('update `servers...', Array, Object(Closure))
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(495): Illuminate\Database\Connection->affectingStatement('update `servers...', Array)
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(3256): Illuminate\Database\Connection->update('update `servers...', Array)
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Builder.php(971): Illuminate\Database\Query\Builder->update(Array)
+#7 /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php(103): Illuminate\Database\Eloquent\Builder->update(Array)
+#8 [internal function]: Events::onMessage('7f0000010b57000...', Object(stdClass))
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', '{"event":"serve...')
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #82)
+#12 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#13 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#14 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#15 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#16 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#17 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#18 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#19 {main}
+
+Next Illuminate\Database\QueryException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'servers.updated_at' in 'field list' (SQL: update `servers` set `name` = ?, `motd` = ?, `version` = ?, `servers`.`updated_at` = 2022-04-16 13:38:04 where `token` = 123affgwf) in /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php:745
+Stack trace:
+#0 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(705): Illuminate\Database\Connection->runQueryCallback('update `servers...', Array, Object(Closure))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(562): Illuminate\Database\Connection->run('update `servers...', Array, Object(Closure))
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(495): Illuminate\Database\Connection->affectingStatement('update `servers...', Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(3256): Illuminate\Database\Connection->update('update `servers...', Array)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Builder.php(971): Illuminate\Database\Query\Builder->update(Array)
+#5 /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php(103): Illuminate\Database\Eloquent\Builder->update(Array)
+#6 [internal function]: Events::onMessage('7f0000010b57000...', Object(stdClass))
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b57000...', '{"event":"serve...')
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #82)
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#13 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#14 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#15 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#16 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#17 {main}
+2022-04-16 13:38:04 pid:71003 worker[YourAppBusinessWorker:71009] exit with status 64000
+2022-04-16 13:38:27 pid:71003 Workerman[start.php] stopping ...
+2022-04-16 13:38:27 pid:71003 Workerman[start.php] has been stopped
+2022-04-16 13:38:28 pid:71314 Workerman[start.php] start in DEBUG mode
+2022-04-16 13:38:28 pid:71316 PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'servers.updated_at' in 'field list' in /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php:551
+Stack trace:
+#0 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(551): PDO->prepare('update `servers...')
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(738): Illuminate\Database\Connection->Illuminate\Database\{closure}('update `servers...', Array)
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(705): Illuminate\Database\Connection->runQueryCallback('update `servers...', Array, Object(Closure))
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(562): Illuminate\Database\Connection->run('update `servers...', Array, Object(Closure))
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(495): Illuminate\Database\Connection->affectingStatement('update `servers...', Array)
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(3256): Illuminate\Database\Connection->update('update `servers...', Array)
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Builder.php(971): Illuminate\Database\Query\Builder->update(Array)
+#7 /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php(103): Illuminate\Database\Eloquent\Builder->update(Array)
+#8 [internal function]: Events::onMessage('7f0000010b55000...', Object(stdClass))
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b55000...', '{"event":"serve...')
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #79)
+#12 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#13 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#14 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#15 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#16 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#17 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#18 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#19 {main}
+
+Next Illuminate\Database\QueryException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'servers.updated_at' in 'field list' (SQL: update `servers` set `name` = ?, `motd` = ?, `version` = ?, `servers`.`updated_at` = 2022-04-16 13:38:28 where `token` = 123affgwf) in /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php:745
+Stack trace:
+#0 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(705): Illuminate\Database\Connection->runQueryCallback('update `servers...', Array, Object(Closure))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(562): Illuminate\Database\Connection->run('update `servers...', Array, Object(Closure))
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(495): Illuminate\Database\Connection->affectingStatement('update `servers...', Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(3256): Illuminate\Database\Connection->update('update `servers...', Array)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Builder.php(971): Illuminate\Database\Query\Builder->update(Array)
+#5 /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php(103): Illuminate\Database\Eloquent\Builder->update(Array)
+#6 [internal function]: Events::onMessage('7f0000010b55000...', Object(stdClass))
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b55000...', '{"event":"serve...')
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #79)
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#13 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#14 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#15 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#16 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#17 {main}
+2022-04-16 13:38:28 pid:71314 worker[YourAppBusinessWorker:71316] exit with status 64000
+2022-04-16 13:38:51 pid:71314 Workerman[start.php] stopping ...
+2022-04-16 13:38:51 pid:71314 Workerman[start.php] has been stopped
+2022-04-16 13:38:52 pid:71620 Workerman[start.php] start in DEBUG mode
+2022-04-16 13:39:22 pid:71620 Workerman[start.php] reloading
+2022-04-16 13:39:23 pid:71620 Workerman[start.php] stopping ...
+2022-04-16 13:39:23 pid:71620 Workerman[start.php] has been stopped
+2022-04-16 13:39:23 pid:72020 Workerman[start.php] start in DEBUG mode
+2022-04-16 13:39:51 pid:72020 Workerman[start.php] reloading
+2022-04-16 13:40:08 pid:72020 Workerman[start.php] reloading
+2022-04-16 13:42:16 pid:72020 Workerman[start.php] reloading
+2022-04-16 13:42:22 pid:72020 Workerman[start.php] reloading
+2022-04-16 13:44:09 pid:72020 Workerman[start.php] reloading

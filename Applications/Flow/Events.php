@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of workerman.
  *
@@ -19,8 +20,12 @@
  */
 //declare(ticks=1);
 
+// namespace Flow;
+
+use Applications\Models\Server;
 use Workerman\Lib\Timer;
 use \GatewayWorker\Lib\Gateway;
+
 
 /**
  * 主逻辑
@@ -29,6 +34,8 @@ use \GatewayWorker\Lib\Gateway;
  */
 class Events
 {
+    public static $db = null;
+    public static $redis = null;
     /**
      * 当客户端连接时触发
      * 如果业务不需此回调可以删除onConnect
@@ -37,70 +44,110 @@ class Events
      */
     public static function onConnect($client_id)
     {
-        $auth_timer_id = Timer::add(30, function($client_id){
+        $auth_timer_id = Timer::add(30, function ($client_id) {
             Gateway::closeClient($client_id);
         }, array($client_id), false);
-        Gateway::updateSession($client_id, array('auth_timer_id' => $auth_timer_id));
-        
+        Gateway::updateSession($client_id, array('auth_timer_id' => $auth_timer_id, 'login' => false));
+
         // 向当前client_id发送数据 
         // Gateway::sendToClient($client_id, "Hello $client_id\r\n");
         // 向所有人发送
         // Gateway::sendToAll("$client_id login\r\n");
     }
-    
-   /**
-    * 当客户端发来消息时触发
-    * @param int $client_id 连接id
-    * @param mixed $msg 具体消息
-    */
-   public static function onMessage($client_id, $msg)
-   {
+
+    /**
+     * 当客户端发来消息时触发
+     * @param int $client_id 连接id
+     * @param mixed $msg 具体消息
+     */
+    public static function onMessage($client_id, $msg)
+    {
         $_SESSION = Gateway::getSession($client_id);
 
         $msg = json_decode($msg);
 
-        if ($msg->event !== 'login' || $_SESSION['auth_timer_id'] !== null) {
-
+        if ($msg->event !== 'login' && $_SESSION['login'] !== true) {
+            // echo $msg->event . PHP_EOL;
+            // echo $_SESSION['auth_timer_id'] . PHP_EOL;
+            Gateway::closeCurrentClient();
         }
 
-        switch($msg->event)
-        {
+        switch ($msg->event) {
             case 'login':
 
                 if ($msg->data == 'edge_flow') {
                     Gateway::closeCurrentClient();
                 }
-                self::send($client_id, 'login_success', $client_id);
-                // 记录session，表明认证成功
-                $_SESSION['login'] = true;
-                break;
-            // 30秒后客户端发来心跳回复时，仍然没认证，则关闭连接
-            case 'pong':
-                if(empty($_SESSION['login']))
-                {
-                     Gateway::closeClient($client_id);
+
+                $server = Server::current($msg->data)->first();
+                // $server = self::$db->table('servers')->where('token', $msg->data)->first();
+
+                if ($server !== null) {
+                    echo '登录成功 ' . $server->name . PHP_EOL;
+                    self::send('login_success', $server);
+                } else {
+                    self::send('login_failed', $client_id);
                 }
+
+                // self::send('login_failed', $client_id);
+                // 记录session，表明认证成功
+                Timer::del($_SESSION['auth_timer_id']);
+                $_SESSION['login'] = true;
+                $_SESSION['token'] = $msg->data;
+                break;
+
+                // 设置服务器信息
+            case 'server_data':
+                $server = Server::current($_SESSION['token'])->update([
+                    'name' => $msg->data->name,
+                    'motd' => $msg->data->motd,
+                    'version' => $msg->data->version,
+                ]);
+
+                break;
+
+
+            case 'update_user':
+
+
+                break;
+
+            default:
+                echo '未知操作:' . $client_id . '->' . $msg->event . PHP_EOL;
+                break;
         }
 
         // 向所有人发送 
         // Gateway::sendToAll("$client_id said $message\r\n");
-   }
-   
-   /**
-    * 当用户断开连接时触发
-    * @param int $client_id 连接id
-    */
-   public static function onClose($client_id)
-   {
-       // 向所有人发送 
-    //    GateWay::sendToAll("$client_id logout\r\n");
-   }
 
-   public static function send($client_id, $event, $msg) {
-       $data = [
-           'event' => $event,
-           'data' => $msg
-       ];
-       Gateway::sendToClient($client_id, json_encode($data));
-   }
+
+    }
+
+    /**
+     * 当用户断开连接时触发
+     * @param int $client_id 连接id
+     */
+    public static function onClose($client_id)
+    {
+        // 向所有人发送 
+        //    GateWay::sendToAll("$client_id logout\r\n");
+    }
+
+    public static function sendTo($client_id, $event, $msg)
+    {
+        $data = [
+            'event' => $event,
+            'data' => $msg
+        ];
+        Gateway::sendToClient($client_id, json_encode($data));
+    }
+
+    public static function send($event, $msg)
+    {
+        $data = [
+            'event' => $event,
+            'data' => $msg
+        ];
+        Gateway::sendToCurrentClient(json_encode($data));
+    }
 }
