@@ -66,6 +66,10 @@ class ComposerStaticInit8f3411af7a7a58e545cca1dc386d93c8
         array (
             'Carbon\\' => 7,
         ),
+        'A' => 
+        array (
+            'Applications\\' => 13,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -135,9 +139,9 @@ class ComposerStaticInit8f3411af7a7a58e545cca1dc386d93c8
         ),
         'Illuminate\\Support\\' => 
         array (
-            0 => __DIR__ . '/..' . '/illuminate/macroable',
+            0 => __DIR__ . '/..' . '/illuminate/collections',
             1 => __DIR__ . '/..' . '/illuminate/conditionable',
-            2 => __DIR__ . '/..' . '/illuminate/collections',
+            2 => __DIR__ . '/..' . '/illuminate/macroable',
             3 => __DIR__ . '/..' . '/illuminate/support',
         ),
         'Illuminate\\Database\\' => 
@@ -164,10 +168,10 @@ class ComposerStaticInit8f3411af7a7a58e545cca1dc386d93c8
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
         ),
-    );
-
-    public static $fallbackDirsPsr4 = array (
-        0 => __DIR__ . '/../..' . '/',
+        'Applications\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Applications',
+        ),
     );
 
     public static $classMap = array (
@@ -185,7 +189,6 @@ class ComposerStaticInit8f3411af7a7a58e545cca1dc386d93c8
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit8f3411af7a7a58e545cca1dc386d93c8::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit8f3411af7a7a58e545cca1dc386d93c8::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInit8f3411af7a7a58e545cca1dc386d93c8::$fallbackDirsPsr4;
             $loader->classMap = ComposerStaticInit8f3411af7a7a58e545cca1dc386d93c8::$classMap;
 
         }, null, ClassLoader::class);

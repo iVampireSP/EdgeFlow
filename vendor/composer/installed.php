@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'fd27658dce975e1062f1d726efe881d77419f90b',
+        'reference' => '8af224814c7b2d2a3246cbcc4965be947a38232e',
         'name' => 'workerman/gateway-worker-demo',
         'dev' => true,
     ),
@@ -241,7 +241,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'fd27658dce975e1062f1d726efe881d77419f90b',
+            'reference' => '8af224814c7b2d2a3246cbcc4965be947a38232e',
             'dev_requirement' => false,
         ),
         'workerman/mysql' => array(

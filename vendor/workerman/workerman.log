@@ -1530,3 +1530,785 @@ Stack trace:
 2022-04-16 13:42:16 pid:72020 Workerman[start.php] reloading
 2022-04-16 13:42:22 pid:72020 Workerman[start.php] reloading
 2022-04-16 13:44:09 pid:72020 Workerman[start.php] reloading
+2022-04-16 13:49:29 pid:72020 Workerman[start.php] reloading
+2022-04-16 13:49:54 pid:72020 Workerman[start.php] reloading
+2022-04-16 13:51:23 pid:72020 Workerman[start.php] reloading
+2022-04-16 13:51:30 pid:72020 Workerman[start.php] reloading
+2022-04-16 13:51:31 pid:72020 Workerman[start.php] stopping ...
+2022-04-16 13:51:31 pid:72020 Workerman[start.php] has been stopped
+2022-04-16 13:51:31 pid:94120 Workerman[start.php] start in DEBUG mode
+2022-04-16 13:51:38 pid:94120 Workerman[start.php] reloading
+2022-04-16 13:51:40 pid:94120 Workerman[start.php] stopping ...
+2022-04-16 13:51:40 pid:94120 Workerman[start.php] has been stopped
+2022-04-16 13:51:40 pid:94254 Workerman[start.php] start in DEBUG mode
+2022-04-16 13:51:52 pid:94254 Workerman[start.php] reloading
+2022-04-16 13:51:54 pid:94254 Workerman[start.php] stopping ...
+2022-04-16 13:51:54 pid:94254 Workerman[start.php] has been stopped
+2022-04-16 13:51:56 pid:94457 Workerman[start.php] start in DEBUG mode
+2022-04-16 13:52:12 pid:94457 Workerman[start.php] reloading
+2022-04-16 13:52:30 pid:94457 Workerman[start.php] reloading
+2022-04-16 13:54:21 pid:94457 Workerman[start.php] reloading
+2022-04-16 13:54:31 pid:94457 Workerman[start.php] reloading
+2022-04-16 13:54:38 pid:94457 Workerman[start.php] reloading
+2022-04-16 13:54:44 pid:94457 Workerman[start.php] reloading
+2022-04-16 13:55:17 pid:94457 Workerman[start.php] reloading
+2022-04-16 13:55:40 pid:94457 Workerman[start.php] reloading
+2022-04-16 13:55:45 pid:94457 Workerman[start.php] reloading
+2022-04-16 13:55:51 pid:94457 Workerman[start.php] reloading
+2022-04-16 13:55:56 pid:94457 Workerman[start.php] reloading
+2022-04-16 13:56:28 pid:94457 Workerman[start.php] reloading
+2022-04-16 13:57:04 pid:94457 Workerman[start.php] reloading
+2022-04-16 13:57:16 pid:94457 Workerman[start.php] reloading
+2022-04-16 13:57:20 pid:94457 Workerman[start.php] reloading
+2022-04-16 13:57:25 pid:94457 Workerman[start.php] reloading
+2022-04-16 13:57:46 pid:94457 Workerman[start.php] reloading
+2022-04-16 13:57:58 pid:94457 Workerman[start.php] reloading
+2022-04-16 13:58:09 pid:94457 Workerman[start.php] reloading
+2022-04-16 13:59:00 pid:94457 Workerman[start.php] reloading
+2022-04-16 13:59:18 pid:94457 Workerman[start.php] reloading
+2022-04-16 13:59:29 pid:94457 Workerman[start.php] reloading
+2022-04-16 13:59:49 pid:94457 Workerman[start.php] reloading
+2022-04-16 13:59:52 pid:94457 Workerman[start.php] reloading
+2022-04-16 13:59:55 pid:94457 Workerman[start.php] stopping ...
+2022-04-16 13:59:55 pid:94457 Workerman[start.php] has been stopped
+2022-04-16 14:01:50 pid:2580 Workerman[start.php] start in DEBUG mode
+2022-04-16 14:01:55 pid:2583 Worker[2583] process terminated with ERROR: E_COMPILE_ERROR "Cannot declare class Applications\Models\Server, because the name is already in use in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Models/Player.php on line 7"
+2022-04-16 14:01:55 pid:2580 worker[YourAppBusinessWorker:2583] exit with status 65280
+2022-04-16 14:01:56 pid:2785 Error: Class "Applications\Models\Player" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:118
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"updat...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #82)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 14:01:56 pid:2580 worker[YourAppBusinessWorker:2785] exit with status 64000
+2022-04-16 14:01:57 pid:2814 Error: Class "Applications\Models\Player" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:118
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"updat...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #83)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 14:01:57 pid:2580 worker[YourAppBusinessWorker:2814] exit with status 64000
+2022-04-16 14:01:58 pid:2580 Workerman[start.php] stopping ...
+2022-04-16 14:01:58 pid:2580 Workerman[start.php] has been stopped
+2022-04-16 14:02:08 pid:2974 Workerman[start.php] start in DEBUG mode
+2022-04-16 14:02:12 pid:2976 Worker[2976] process terminated with ERROR: E_COMPILE_ERROR "Cannot declare class Applications\Models\Server, because the name is already in use in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Models/Player.php on line 7"
+2022-04-16 14:02:12 pid:2974 worker[YourAppBusinessWorker:2976] exit with status 65280
+2022-04-16 14:02:13 pid:3139 Error: Class "Applications\Models\Player" not found in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:118
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b55000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b55000...', '{"event":"updat...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #81)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 14:02:13 pid:2974 worker[YourAppBusinessWorker:3139] exit with status 64000
+2022-04-16 14:02:14 pid:2974 Workerman[start.php] stopping ...
+2022-04-16 14:02:14 pid:2974 Workerman[start.php] has been stopped
+2022-04-16 14:02:36 pid:3500 Workerman[start.php] start in DEBUG mode
+2022-04-16 14:02:39 pid:3504 PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'updated_at' in 'field list' in /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php:524
+Stack trace:
+#0 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(524): PDO->prepare('insert into `pl...')
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(738): Illuminate\Database\Connection->Illuminate\Database\{closure}('insert into `pl...', Array)
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(705): Illuminate\Database\Connection->runQueryCallback('insert into `pl...', Array, Object(Closure))
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(531): Illuminate\Database\Connection->run('insert into `pl...', Array, Object(Closure))
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(483): Illuminate\Database\Connection->statement('insert into `pl...', Array)
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Processors/Processor.php(32): Illuminate\Database\Connection->insert('insert into `pl...', Array)
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(3221): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `pl...', Array, 'id')
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Builder.php(1707): Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(1190): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(1155): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(996): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#11 /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php(129): Illuminate\Database\Eloquent\Model->save()
+#12 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#13 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"updat...')
+#14 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#15 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #82)
+#16 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#17 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#18 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#19 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#20 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#21 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#22 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#23 {main}
+
+Next Illuminate\Database\QueryException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'updated_at' in 'field list' (SQL: insert into `players` (`name`, `xuid`, `updated_at`, `created_at`) values (iVampireSP, 2535443560313823, 2022-04-16 14:02:39, 2022-04-16 14:02:39)) in /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php:745
+Stack trace:
+#0 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(705): Illuminate\Database\Connection->runQueryCallback('insert into `pl...', Array, Object(Closure))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(531): Illuminate\Database\Connection->run('insert into `pl...', Array, Object(Closure))
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(483): Illuminate\Database\Connection->statement('insert into `pl...', Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Processors/Processor.php(32): Illuminate\Database\Connection->insert('insert into `pl...', Array)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(3221): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `pl...', Array, 'id')
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Builder.php(1707): Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(1190): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(1155): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(996): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#9 /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php(129): Illuminate\Database\Eloquent\Model->save()
+#10 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"updat...')
+#12 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#13 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #82)
+#14 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#15 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#16 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#17 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#18 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#19 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#20 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#21 {main}
+2022-04-16 14:02:39 pid:3500 worker[YourAppBusinessWorker:3504] exit with status 64000
+2022-04-16 14:02:40 pid:3588 PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'updated_at' in 'field list' in /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php:524
+Stack trace:
+#0 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(524): PDO->prepare('insert into `pl...')
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(738): Illuminate\Database\Connection->Illuminate\Database\{closure}('insert into `pl...', Array)
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(705): Illuminate\Database\Connection->runQueryCallback('insert into `pl...', Array, Object(Closure))
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(531): Illuminate\Database\Connection->run('insert into `pl...', Array, Object(Closure))
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(483): Illuminate\Database\Connection->statement('insert into `pl...', Array)
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Processors/Processor.php(32): Illuminate\Database\Connection->insert('insert into `pl...', Array)
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(3221): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `pl...', Array, 'id')
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Builder.php(1707): Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(1190): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(1155): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(996): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#11 /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php(129): Illuminate\Database\Eloquent\Model->save()
+#12 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#13 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"updat...')
+#14 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#15 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #83)
+#16 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#17 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#18 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#19 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#20 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#21 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#22 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#23 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#24 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#25 {main}
+
+Next Illuminate\Database\QueryException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'updated_at' in 'field list' (SQL: insert into `players` (`name`, `xuid`, `updated_at`, `created_at`) values (iVampireSP, 2535443560313823, 2022-04-16 14:02:40, 2022-04-16 14:02:40)) in /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php:745
+Stack trace:
+#0 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(705): Illuminate\Database\Connection->runQueryCallback('insert into `pl...', Array, Object(Closure))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(531): Illuminate\Database\Connection->run('insert into `pl...', Array, Object(Closure))
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(483): Illuminate\Database\Connection->statement('insert into `pl...', Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Processors/Processor.php(32): Illuminate\Database\Connection->insert('insert into `pl...', Array)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(3221): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `pl...', Array, 'id')
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Builder.php(1707): Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(1190): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(1155): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(996): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#9 /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php(129): Illuminate\Database\Eloquent\Model->save()
+#10 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"updat...')
+#12 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#13 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #83)
+#14 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#15 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#16 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#17 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#18 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#19 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#20 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#21 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#22 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#23 {main}
+2022-04-16 14:02:40 pid:3500 worker[YourAppBusinessWorker:3588] exit with status 64000
+2022-04-16 14:02:41 pid:3619 PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'updated_at' in 'field list' in /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php:524
+Stack trace:
+#0 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(524): PDO->prepare('insert into `pl...')
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(738): Illuminate\Database\Connection->Illuminate\Database\{closure}('insert into `pl...', Array)
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(705): Illuminate\Database\Connection->runQueryCallback('insert into `pl...', Array, Object(Closure))
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(531): Illuminate\Database\Connection->run('insert into `pl...', Array, Object(Closure))
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(483): Illuminate\Database\Connection->statement('insert into `pl...', Array)
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Processors/Processor.php(32): Illuminate\Database\Connection->insert('insert into `pl...', Array)
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(3221): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `pl...', Array, 'id')
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Builder.php(1707): Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(1190): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(1155): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(996): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#11 /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php(129): Illuminate\Database\Eloquent\Model->save()
+#12 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#13 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"updat...')
+#14 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#15 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #84)
+#16 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#17 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#18 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#19 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#20 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#21 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#22 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#23 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#24 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#25 {main}
+
+Next Illuminate\Database\QueryException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'updated_at' in 'field list' (SQL: insert into `players` (`name`, `xuid`, `updated_at`, `created_at`) values (iVampireSP, 2535443560313823, 2022-04-16 14:02:41, 2022-04-16 14:02:41)) in /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php:745
+Stack trace:
+#0 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(705): Illuminate\Database\Connection->runQueryCallback('insert into `pl...', Array, Object(Closure))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(531): Illuminate\Database\Connection->run('insert into `pl...', Array, Object(Closure))
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(483): Illuminate\Database\Connection->statement('insert into `pl...', Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Processors/Processor.php(32): Illuminate\Database\Connection->insert('insert into `pl...', Array)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(3221): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `pl...', Array, 'id')
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Builder.php(1707): Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(1190): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(1155): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(996): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#9 /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php(129): Illuminate\Database\Eloquent\Model->save()
+#10 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"updat...')
+#12 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#13 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #84)
+#14 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#15 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#16 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#17 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#18 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#19 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#20 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#21 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#22 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#23 {main}
+2022-04-16 14:02:41 pid:3500 worker[YourAppBusinessWorker:3619] exit with status 64000
+2022-04-16 14:02:42 pid:3649 PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'updated_at' in 'field list' in /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php:524
+Stack trace:
+#0 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(524): PDO->prepare('insert into `pl...')
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(738): Illuminate\Database\Connection->Illuminate\Database\{closure}('insert into `pl...', Array)
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(705): Illuminate\Database\Connection->runQueryCallback('insert into `pl...', Array, Object(Closure))
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(531): Illuminate\Database\Connection->run('insert into `pl...', Array, Object(Closure))
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(483): Illuminate\Database\Connection->statement('insert into `pl...', Array)
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Processors/Processor.php(32): Illuminate\Database\Connection->insert('insert into `pl...', Array)
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(3221): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `pl...', Array, 'id')
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Builder.php(1707): Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(1190): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(1155): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(996): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#11 /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php(129): Illuminate\Database\Eloquent\Model->save()
+#12 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#13 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"updat...')
+#14 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#15 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #85)
+#16 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#17 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#18 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#19 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#20 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#21 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#22 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#23 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#24 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#25 {main}
+
+Next Illuminate\Database\QueryException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'updated_at' in 'field list' (SQL: insert into `players` (`name`, `xuid`, `updated_at`, `created_at`) values (iVampireSP, 2535443560313823, 2022-04-16 14:02:42, 2022-04-16 14:02:42)) in /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php:745
+Stack trace:
+#0 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(705): Illuminate\Database\Connection->runQueryCallback('insert into `pl...', Array, Object(Closure))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(531): Illuminate\Database\Connection->run('insert into `pl...', Array, Object(Closure))
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(483): Illuminate\Database\Connection->statement('insert into `pl...', Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Processors/Processor.php(32): Illuminate\Database\Connection->insert('insert into `pl...', Array)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(3221): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `pl...', Array, 'id')
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Builder.php(1707): Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(1190): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(1155): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(996): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#9 /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php(129): Illuminate\Database\Eloquent\Model->save()
+#10 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"updat...')
+#12 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#13 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #85)
+#14 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#15 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#16 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#17 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#18 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#19 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#20 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#21 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#22 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#23 {main}
+2022-04-16 14:02:42 pid:3500 worker[YourAppBusinessWorker:3649] exit with status 64000
+2022-04-16 14:02:43 pid:3500 Workerman[start.php] stopping ...
+2022-04-16 14:02:43 pid:3500 Workerman[start.php] has been stopped
+2022-04-16 14:03:01 pid:3875 Workerman[start.php] start in DEBUG mode
+2022-04-16 14:08:15 pid:3875 Workerman[start.php] stopping ...
+2022-04-16 14:08:15 pid:3875 Workerman[start.php] has been stopped
+2022-04-16 14:08:15 pid:7705 Workerman[start.php] start in DEBUG mode
+2022-04-16 14:09:35 pid:7705 Workerman[start.php] stopping ...
+2022-04-16 14:09:35 pid:7705 Workerman[start.php] has been stopped
+2022-04-16 14:09:35 pid:8854 Workerman[start.php] start in DEBUG mode
+2022-04-16 14:11:57 pid:8854 Workerman[start.php] reloading
+2022-04-16 14:12:01 pid:8854 Workerman[start.php] reloading
+2022-04-16 14:12:03 pid:8854 Workerman[start.php] stopping ...
+2022-04-16 14:12:03 pid:8854 Workerman[start.php] has been stopped
+2022-04-16 14:12:04 pid:11487 Workerman[start.php] start in DEBUG mode
+2022-04-16 14:12:29 pid:11487 Workerman[start.php] reloading
+2022-04-16 14:12:31 pid:11487 Workerman[start.php] reloading
+2022-04-16 14:12:32 pid:11487 Workerman[start.php] stopping ...
+2022-04-16 14:12:32 pid:11487 Workerman[start.php] has been stopped
+2022-04-16 14:12:32 pid:11856 Workerman[start.php] start in DEBUG mode
+2022-04-16 14:12:42 pid:11856 Workerman[start.php] reloading
+2022-04-16 14:12:48 pid:11856 Workerman[start.php] reloading
+2022-04-16 14:12:50 pid:11856 Workerman[start.php] stopping ...
+2022-04-16 14:12:50 pid:11856 Workerman[start.php] has been stopped
+2022-04-16 14:12:50 pid:12120 Workerman[start.php] start in DEBUG mode
+2022-04-16 14:12:51 pid:12123 PDOException: SQLSTATE[22032]: <<Unknown error>>: 3140 Invalid JSON text: "Missing a comma or '}' after an object member." at position 20 in value for column 'players.nbt'. in /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php:555
+Stack trace:
+#0 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(555): PDOStatement->execute()
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(738): Illuminate\Database\Connection->Illuminate\Database\{closure}('update `players...', Array)
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(705): Illuminate\Database\Connection->runQueryCallback('update `players...', Array, Object(Closure))
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(562): Illuminate\Database\Connection->run('update `players...', Array, Object(Closure))
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(495): Illuminate\Database\Connection->affectingStatement('update `players...', Array)
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(3256): Illuminate\Database\Connection->update('update `players...', Array)
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Builder.php(971): Illuminate\Database\Query\Builder->update(Array)
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(1074): Illuminate\Database\Eloquent\Builder->update(Array)
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(989): Illuminate\Database\Eloquent\Model->performUpdate(Object(Illuminate\Database\Eloquent\Builder))
+#9 /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php(134): Illuminate\Database\Eloquent\Model->save()
+#10 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"updat...')
+#12 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#13 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #82)
+#14 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#15 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#16 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#17 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#18 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#19 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#20 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#21 {main}
+
+Next Illuminate\Database\QueryException: SQLSTATE[22032]: <<Unknown error>>: 3140 Invalid JSON text: "Missing a comma or '}' after an object member." at position 20 in value for column 'players.nbt'. (SQL: update `players` set `nbt` = {"Armor":[{"Count":0b,"Damage":0s,"Name":"","WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","WasPickedUp":0b}],"EnderChest":[{"Count":0b,"Damage":0s,"Name":"","Slot":0b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":1b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":2b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":3b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":4b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":5b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":6b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":7b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":8b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":9b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":10b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":11b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":12b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":13b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":14b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":15b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":16b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":17b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":18b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":19b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":20b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":21b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":22b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":23b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":24b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":25b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":26b,"WasPickedUp":0b}],"Inventory":[{"Count":1b,"Damage":0s,"Name":"minecraft:wheat_seeds","Slot":0b,"WasPickedUp":0b},{"Block":{"name":"minecraft:double_plant","states":{"double_plant_type":"grass","upper_block_bit":0b},"version":17959425},"Count":1b,"Damage":0s,"Name":"minecraft:double_plant","Slot":1b,"WasPickedUp":0b},{"Block":{"name":"minecraft:grass","states":{},"version":17959425},"Count":1b,"Damage":0s,"Name":"minecraft:grass","Slot":2b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":3b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":4b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":5b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":6b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":7b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":8b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":9b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":10b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":11b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":12b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":13b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":14b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":15b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":16b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":17b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":18b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":19b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":20b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":21b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":22b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":23b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":24b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":25b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":26b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":27b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":28b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":29b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":30b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":31b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":32b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":33b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":34b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":35b,"WasPickedUp":0b}],"OffHand":[{"Count":0b,"Damage":0s,"Name":"","WasPickedUp":0b}]}, `players`.`updated_at` = 2022-04-16 14:12:51 where `id` = 1) in /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php:745
+Stack trace:
+#0 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(705): Illuminate\Database\Connection->runQueryCallback('update `players...', Array, Object(Closure))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(562): Illuminate\Database\Connection->run('update `players...', Array, Object(Closure))
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(495): Illuminate\Database\Connection->affectingStatement('update `players...', Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(3256): Illuminate\Database\Connection->update('update `players...', Array)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Builder.php(971): Illuminate\Database\Query\Builder->update(Array)
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(1074): Illuminate\Database\Eloquent\Builder->update(Array)
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(989): Illuminate\Database\Eloquent\Model->performUpdate(Object(Illuminate\Database\Eloquent\Builder))
+#7 /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php(134): Illuminate\Database\Eloquent\Model->save()
+#8 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"updat...')
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #82)
+#12 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#13 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#14 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#15 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#16 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#17 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#18 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#19 {main}
+2022-04-16 14:12:51 pid:12120 worker[YourAppBusinessWorker:12123] exit with status 64000
+2022-04-16 14:12:52 pid:12131 PDOException: SQLSTATE[22032]: <<Unknown error>>: 3140 Invalid JSON text: "Missing a comma or '}' after an object member." at position 20 in value for column 'players.nbt'. in /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php:555
+Stack trace:
+#0 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(555): PDOStatement->execute()
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(738): Illuminate\Database\Connection->Illuminate\Database\{closure}('update `players...', Array)
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(705): Illuminate\Database\Connection->runQueryCallback('update `players...', Array, Object(Closure))
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(562): Illuminate\Database\Connection->run('update `players...', Array, Object(Closure))
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(495): Illuminate\Database\Connection->affectingStatement('update `players...', Array)
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(3256): Illuminate\Database\Connection->update('update `players...', Array)
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Builder.php(971): Illuminate\Database\Query\Builder->update(Array)
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(1074): Illuminate\Database\Eloquent\Builder->update(Array)
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(989): Illuminate\Database\Eloquent\Model->performUpdate(Object(Illuminate\Database\Eloquent\Builder))
+#9 /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php(134): Illuminate\Database\Eloquent\Model->save()
+#10 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"updat...')
+#12 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#13 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #83)
+#14 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#15 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#16 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#17 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#18 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#19 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#20 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#21 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#22 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#23 {main}
+
+Next Illuminate\Database\QueryException: SQLSTATE[22032]: <<Unknown error>>: 3140 Invalid JSON text: "Missing a comma or '}' after an object member." at position 20 in value for column 'players.nbt'. (SQL: update `players` set `nbt` = {"Armor":[{"Count":0b,"Damage":0s,"Name":"","WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","WasPickedUp":0b}],"EnderChest":[{"Count":0b,"Damage":0s,"Name":"","Slot":0b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":1b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":2b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":3b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":4b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":5b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":6b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":7b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":8b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":9b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":10b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":11b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":12b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":13b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":14b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":15b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":16b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":17b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":18b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":19b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":20b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":21b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":22b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":23b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":24b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":25b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":26b,"WasPickedUp":0b}],"Inventory":[{"Count":1b,"Damage":0s,"Name":"minecraft:wheat_seeds","Slot":0b,"WasPickedUp":0b},{"Block":{"name":"minecraft:double_plant","states":{"double_plant_type":"grass","upper_block_bit":0b},"version":17959425},"Count":1b,"Damage":0s,"Name":"minecraft:double_plant","Slot":1b,"WasPickedUp":0b},{"Block":{"name":"minecraft:grass","states":{},"version":17959425},"Count":1b,"Damage":0s,"Name":"minecraft:grass","Slot":2b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":3b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":4b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":5b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":6b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":7b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":8b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":9b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":10b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":11b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":12b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":13b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":14b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":15b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":16b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":17b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":18b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":19b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":20b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":21b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":22b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":23b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":24b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":25b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":26b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":27b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":28b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":29b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":30b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":31b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":32b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":33b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":34b,"WasPickedUp":0b},{"Count":0b,"Damage":0s,"Name":"","Slot":35b,"WasPickedUp":0b}],"OffHand":[{"Count":0b,"Damage":0s,"Name":"","WasPickedUp":0b}]}, `players`.`updated_at` = 2022-04-16 14:12:52 where `id` = 1) in /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php:745
+Stack trace:
+#0 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(705): Illuminate\Database\Connection->runQueryCallback('update `players...', Array, Object(Closure))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(562): Illuminate\Database\Connection->run('update `players...', Array, Object(Closure))
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(495): Illuminate\Database\Connection->affectingStatement('update `players...', Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(3256): Illuminate\Database\Connection->update('update `players...', Array)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Builder.php(971): Illuminate\Database\Query\Builder->update(Array)
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(1074): Illuminate\Database\Eloquent\Builder->update(Array)
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Model.php(989): Illuminate\Database\Eloquent\Model->performUpdate(Object(Illuminate\Database\Eloquent\Builder))
+#7 /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php(134): Illuminate\Database\Eloquent\Model->save()
+#8 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"updat...')
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #83)
+#12 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#13 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#14 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#15 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#16 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#17 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#18 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#19 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#20 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#21 {main}
+2022-04-16 14:12:52 pid:12120 worker[YourAppBusinessWorker:12131] exit with status 64000
+2022-04-16 14:12:53 pid:12120 Workerman[start.php] stopping ...
+2022-04-16 14:12:53 pid:12120 Workerman[start.php] has been stopped
+2022-04-16 14:13:25 pid:12579 Workerman[start.php] start in DEBUG mode
+2022-04-16 14:13:45 pid:12579 Workerman[start.php] reloading
+2022-04-16 14:13:46 pid:12579 Workerman[start.php] stopping ...
+2022-04-16 14:13:46 pid:12579 Workerman[start.php] has been stopped
+2022-04-16 14:13:46 pid:12976 Workerman[start.php] start in DEBUG mode
+2022-04-16 14:14:00 pid:12976 Workerman[start.php] reloading
+2022-04-16 14:14:03 pid:12976 Workerman[start.php] reloading
+2022-04-16 14:14:04 pid:12976 Workerman[start.php] stopping ...
+2022-04-16 14:14:04 pid:12976 Workerman[start.php] has been stopped
+2022-04-16 14:14:05 pid:13459 Workerman[start.php] start in DEBUG mode
+2022-04-16 14:15:54 pid:13459 Workerman[start.php] reloading
+2022-04-16 14:16:10 pid:13459 Workerman[start.php] reloading
+2022-04-16 14:16:13 pid:13459 Workerman[start.php] reloading
+2022-04-16 14:16:41 pid:13459 Workerman[start.php] reloading
+2022-04-16 14:17:03 pid:13459 Workerman[start.php] reloading
+2022-04-16 14:17:11 pid:13459 Workerman[start.php] reloading
+2022-04-16 14:17:12 pid:13459 Workerman[start.php] reloading
+2022-04-16 14:20:51 pid:13459 Workerman[start.php] stopping ...
+2022-04-16 14:20:51 pid:13459 Workerman[start.php] has been stopped
+2022-04-16 14:20:52 pid:19749 Workerman[start.php] start in DEBUG mode
+2022-04-16 14:21:07 pid:19749 Workerman[start.php] reloading
+2022-04-16 14:21:07 pid:19749 Workerman[start.php] stopping ...
+2022-04-16 14:21:07 pid:19749 Workerman[start.php] has been stopped
+2022-04-16 14:21:07 pid:19947 Workerman[start.php] start in DEBUG mode
+2022-04-16 14:22:14 pid:19947 Workerman[start.php] stopping ...
+2022-04-16 14:22:14 pid:19947 Workerman[start.php] has been stopped
+2022-04-16 14:22:15 pid:21127 Workerman[start.php] start in DEBUG mode
+2022-04-16 14:22:39 pid:21127 Workerman[start.php] stopping ...
+2022-04-16 14:22:39 pid:21127 Workerman[start.php] has been stopped
+2022-04-16 14:22:39 pid:21655 Workerman[start.php] start in DEBUG mode
+2022-04-16 14:23:27 pid:21655 Workerman[start.php] reloading
+2022-04-16 14:23:27 pid:21655 Workerman[start.php] stopping ...
+2022-04-16 14:23:27 pid:21655 Workerman[start.php] has been stopped
+2022-04-16 14:23:28 pid:22684 Workerman[start.php] start in DEBUG mode
+2022-04-16 14:23:29 pid:22688 Error: Object of class stdClass could not be converted to string in /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php:651
+Stack trace:
+#0 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(651): PDOStatement->bindValue(1, Object(stdClass), 2)
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(400): Illuminate\Database\Connection->bindValues(Object(PDOStatement), Array)
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(738): Illuminate\Database\Connection->Illuminate\Database\{closure}('select * from `...', Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(705): Illuminate\Database\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(405): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(2607): Illuminate\Database\Connection->select('select * from `...', Array, true)
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(2595): Illuminate\Database\Query\Builder->runSelect()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(3129): Illuminate\Database\Query\Builder->Illuminate\Database\Query\{closure}()
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(2596): Illuminate\Database\Query\Builder->onceWithColumns(Array, Object(Closure))
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Builder.php(675): Illuminate\Database\Query\Builder->get(Array)
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Builder.php(659): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Concerns/BuildsQueries.php(296): Illuminate\Database\Eloquent\Builder->get(Array)
+#12 /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php(144): Illuminate\Database\Eloquent\Builder->first()
+#13 [internal function]: Events::onMessage('7f0000010b55000...', Object(stdClass))
+#14 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b55000...', '{"event":"get_p...')
+#15 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#16 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #79)
+#17 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#18 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#19 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#20 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#21 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#22 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#23 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#24 {main}
+2022-04-16 14:23:29 pid:22684 worker[YourAppBusinessWorker:22688] exit with status 64000
+2022-04-16 14:24:00 pid:22684 Workerman[start.php] reloading
+2022-04-16 14:24:01 pid:22684 Workerman[start.php] stopping ...
+2022-04-16 14:24:01 pid:22684 Workerman[start.php] has been stopped
+2022-04-16 14:24:01 pid:23295 Workerman[start.php] start in DEBUG mode
+2022-04-16 14:28:27 pid:23299 Error: Object of class stdClass could not be converted to string in /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php:651
+Stack trace:
+#0 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(651): PDOStatement->bindValue(1, Object(stdClass), 2)
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(400): Illuminate\Database\Connection->bindValues(Object(PDOStatement), Array)
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(738): Illuminate\Database\Connection->Illuminate\Database\{closure}('select * from `...', Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(705): Illuminate\Database\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(405): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(2607): Illuminate\Database\Connection->select('select * from `...', Array, true)
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(2595): Illuminate\Database\Query\Builder->runSelect()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(3129): Illuminate\Database\Query\Builder->Illuminate\Database\Query\{closure}()
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(2596): Illuminate\Database\Query\Builder->onceWithColumns(Array, Object(Closure))
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Builder.php(675): Illuminate\Database\Query\Builder->get(Array)
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Builder.php(659): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Concerns/BuildsQueries.php(296): Illuminate\Database\Eloquent\Builder->get(Array)
+#12 /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php(144): Illuminate\Database\Eloquent\Builder->first()
+#13 [internal function]: Events::onMessage('7f0000010b54000...', Object(stdClass))
+#14 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"event":"get_p...')
+#15 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#16 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #80)
+#17 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#18 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#19 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#20 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#21 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#22 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#23 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#24 {main}
+2022-04-16 14:28:27 pid:23295 worker[YourAppBusinessWorker:23299] exit with status 64000
+2022-04-16 14:31:42 pid:23300 Error: Object of class stdClass could not be converted to string in /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php:651
+Stack trace:
+#0 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(651): PDOStatement->bindValue(1, Object(stdClass), 2)
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(400): Illuminate\Database\Connection->bindValues(Object(PDOStatement), Array)
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(738): Illuminate\Database\Connection->Illuminate\Database\{closure}('select * from `...', Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(705): Illuminate\Database\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Connection.php(405): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(2607): Illuminate\Database\Connection->select('select * from `...', Array, true)
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(2595): Illuminate\Database\Query\Builder->runSelect()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(3129): Illuminate\Database\Query\Builder->Illuminate\Database\Query\{closure}()
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Query/Builder.php(2596): Illuminate\Database\Query\Builder->onceWithColumns(Array, Object(Closure))
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Builder.php(675): Illuminate\Database\Query\Builder->get(Array)
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Eloquent/Builder.php(659): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/illuminate/database/Concerns/BuildsQueries.php(296): Illuminate\Database\Eloquent\Builder->get(Array)
+#12 /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php(144): Illuminate\Database\Eloquent\Builder->first()
+#13 [internal function]: Events::onMessage('7f0000010b54000...', Object(stdClass))
+#14 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"event":"get_p...')
+#15 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#16 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #80)
+#17 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#18 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#19 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#20 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#21 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#22 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#23 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#24 {main}
+2022-04-16 14:31:42 pid:23295 worker[YourAppBusinessWorker:23300] exit with status 64000
+2022-04-16 14:32:53 pid:23295 Workerman[start.php] reloading
+2022-04-16 14:33:09 pid:23295 Workerman[start.php] stopping ...
+2022-04-16 14:33:09 pid:23295 Workerman[start.php] has been stopped
+2022-04-16 14:33:10 pid:36972 Workerman[start.php] start in DEBUG mode
+2022-04-16 14:35:12 pid:36972 Workerman[start.php] stopping ...
+2022-04-16 14:35:12 pid:36972 Workerman[start.php] has been stopped
+2022-04-16 14:35:12 pid:41561 Workerman[start.php] start in DEBUG mode
+2022-04-16 14:35:19 pid:41561 Workerman[start.php] reloading
+2022-04-16 14:35:22 pid:41561 Workerman[start.php] stopping ...
+2022-04-16 14:35:22 pid:41561 Workerman[start.php] has been stopped
+2022-04-16 14:35:23 pid:41731 Workerman[start.php] start in DEBUG mode
+2022-04-16 14:37:44 pid:41731 Workerman[start.php] reloading
+2022-04-16 14:37:52 pid:41731 Workerman[start.php] reloading
+2022-04-16 14:38:00 pid:41731 Workerman[start.php] reloading
+2022-04-16 14:38:16 pid:41731 Workerman[start.php] reloading
+2022-04-16 14:39:23 pid:41731 Workerman[start.php] stopping ...
+2022-04-16 14:39:23 pid:41731 Workerman[start.php] has been stopped
+2022-04-16 14:39:24 pid:46918 Workerman[start.php] start in DEBUG mode
+2022-04-16 14:40:04 pid:46918 Workerman[start.php] reloading
+2022-04-16 14:40:55 pid:46918 Workerman[start.php] reloading
+2022-04-16 14:41:29 pid:46918 Workerman[start.php] stopping ...
+2022-04-16 14:41:29 pid:46918 Workerman[start.php] has been stopped
+2022-04-16 14:41:29 pid:50160 Workerman[start.php] start in DEBUG mode
+2022-04-16 14:43:49 pid:50160 Workerman[start.php] stopping ...
+2022-04-16 14:43:49 pid:50160 Workerman[start.php] has been stopped
+2022-04-16 14:43:49 pid:53263 Workerman[start.php] start in DEBUG mode
+2022-04-16 14:45:17 pid:53263 Workerman[start.php] reloading
+2022-04-16 14:45:24 pid:53263 Workerman[start.php] reloading
+2022-04-16 14:45:31 pid:53263 Workerman[start.php] reloading
+2022-04-16 14:46:56 pid:53263 Workerman[start.php] reloading
+2022-04-16 14:46:59 pid:53263 Workerman[start.php] reloading
+2022-04-16 14:47:07 pid:53263 Workerman[start.php] reloading
+2022-04-16 14:47:16 pid:53263 Workerman[start.php] reloading
+2022-04-16 14:47:18 pid:53263 Workerman[start.php] reloading
+2022-04-16 14:48:07 pid:53263 Workerman[start.php] reloading
+2022-04-16 14:48:08 pid:53263 Workerman[start.php] stopping ...
+2022-04-16 14:48:08 pid:53263 Workerman[start.php] has been stopped
+2022-04-16 14:48:08 pid:58411 Workerman[start.php] start in DEBUG mode
+2022-04-16 14:50:37 pid:58411 Workerman[start.php] stopping ...
+2022-04-16 14:50:37 pid:58411 Workerman[start.php] has been stopped
+2022-04-16 14:50:38 pid:64056 Workerman[start.php] start in DEBUG mode
+2022-04-16 14:52:08 pid:64056 Workerman[start.php] reloading
+2022-04-16 14:53:38 pid:64056 Workerman[start.php] reloading
+2022-04-16 14:53:42 pid:64056 Workerman[start.php] reloading
+2022-04-16 14:53:49 pid:64056 Workerman[start.php] reloading
+2022-04-16 14:53:51 pid:64056 Workerman[start.php] reloading
+2022-04-16 14:54:12 pid:64056 Workerman[start.php] reloading
+2022-04-16 14:54:23 pid:64056 Workerman[start.php] stopping ...
+2022-04-16 14:54:23 pid:64056 Workerman[start.php] has been stopped
+2022-04-16 14:54:23 pid:68382 Workerman[start.php] start in DEBUG mode
+2022-04-16 14:54:55 pid:68382 Workerman[start.php] reloading
+2022-04-16 14:55:02 pid:68382 Workerman[start.php] reloading
+2022-04-16 14:56:41 pid:68382 Workerman[start.php] reloading
+2022-04-16 14:59:35 pid:68382 Workerman[start.php] stopping ...
+2022-04-16 14:59:35 pid:68382 Workerman[start.php] has been stopped
+2022-04-16 14:59:36 pid:72777 Workerman[start.php] start in DEBUG mode
+2022-04-16 15:02:11 pid:72777 Workerman[start.php] reloading
+2022-04-16 15:02:12 pid:72777 Workerman[start.php] stopping ...
+2022-04-16 15:02:12 pid:72777 Workerman[start.php] has been stopped
+2022-04-16 15:02:12 pid:78261 Workerman[start.php] start in DEBUG mode
+2022-04-16 15:04:28 pid:78261 Workerman[start.php] reloading
+2022-04-16 15:04:29 pid:78261 Workerman[start.php] stopping ...
+2022-04-16 15:04:29 pid:78261 Workerman[start.php] has been stopped
+2022-04-16 15:04:29 pid:81119 Workerman[start.php] start in DEBUG mode
+2022-04-16 15:08:31 pid:81119 Workerman[start.php] reloading
+2022-04-16 15:09:58 pid:81119 Workerman[start.php] reloading
+2022-04-16 15:10:13 pid:81119 Workerman[start.php] reloading
+2022-04-16 15:10:25 pid:81119 Workerman[start.php] reloading
+2022-04-16 15:10:58 pid:81119 Workerman[start.php] reloading
+2022-04-16 15:11:01 pid:81119 Workerman[start.php] reloading
+2022-04-16 15:11:45 pid:81119 Workerman[start.php] reloading
+2022-04-16 15:12:21 pid:81119 Workerman[start.php] reloading
+2022-04-16 15:12:21 pid:81119 Workerman[start.php] stopping ...
+2022-04-16 15:12:21 pid:81119 Workerman[start.php] has been stopped
+2022-04-16 15:12:22 pid:88948 Workerman[start.php] start in DEBUG mode
+2022-04-16 15:12:41 pid:88948 Workerman[start.php] reloading
+2022-04-16 15:13:19 pid:88948 Workerman[start.php] reloading
+2022-04-16 15:13:30 pid:88948 Workerman[start.php] reloading
+2022-04-16 15:13:35 pid:88948 Workerman[start.php] reloading
+2022-04-16 15:14:19 pid:88948 Workerman[start.php] reloading
+2022-04-16 15:14:52 pid:88948 Workerman[start.php] reloading
+2022-04-16 15:15:00 pid:88948 Workerman[start.php] reloading
+2022-04-16 15:15:10 pid:88948 Workerman[start.php] reloading
+2022-04-16 15:15:30 pid:88948 Workerman[start.php] reloading
+2022-04-16 15:15:33 pid:88948 Workerman[start.php] reloading
+2022-04-16 15:16:10 pid:88948 Workerman[start.php] reloading
+2022-04-16 15:16:14 pid:88948 Workerman[start.php] reloading
+2022-04-16 15:16:20 pid:88948 Workerman[start.php] reloading
+2022-04-16 15:16:33 pid:88948 Workerman[start.php] reloading
+2022-04-16 15:16:36 pid:88948 Workerman[start.php] reloading
+2022-04-16 15:16:42 pid:88948 Workerman[start.php] stopping ...
+2022-04-16 15:16:42 pid:88948 Workerman[start.php] has been stopped
+2022-04-16 15:16:43 pid:92232 Workerman[start.php] start in DEBUG mode
+2022-04-16 15:23:02 pid:92234 Error: Attempt to assign property "ip" on null in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:182
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"next"...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #81)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-04-16 15:23:02 pid:92232 worker[YourAppBusinessWorker:92234] exit with status 64000
+2022-04-16 15:23:16 pid:96993 Error: Attempt to assign property "ip" on null in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:182
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b56000...', Object(stdClass))
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000010b56000...', '{"event":"next"...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #82)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1692): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1641): Workerman\Worker::monitorWorkersForLinux()
+#11 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(551): Workerman\Worker::monitorWorkers()
+#12 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#13 {main}
+2022-04-16 15:23:16 pid:92232 worker[YourAppBusinessWorker:96993] exit with status 64000
+2022-04-16 15:24:16 pid:92232 Workerman[start.php] reloading
+2022-04-16 15:24:30 pid:92232 Workerman[start.php] stopping ...
+2022-04-16 15:24:30 pid:92232 Workerman[start.php] has been stopped
+2022-04-16 15:24:30 pid:98628 Workerman[start.php] start in DEBUG mode
+2022-04-16 15:25:04 pid:98628 Workerman[start.php] reloading
+2022-04-16 15:25:05 pid:98628 Workerman[start.php] stopping ...
+2022-04-16 15:25:05 pid:98628 Workerman[start.php] has been stopped
+2022-04-16 15:25:06 pid:99654 Workerman[start.php] start in DEBUG mode
+2022-04-16 15:25:41 pid:99654 Workerman[start.php] reloading
+2022-04-16 15:26:37 pid:99654 Workerman[start.php] reloading
+2022-04-16 15:26:38 pid:99654 Workerman[start.php] stopping ...
+2022-04-16 15:26:38 pid:99654 Workerman[start.php] has been stopped
+2022-04-16 15:26:38 pid:2529 Workerman[start.php] start in DEBUG mode
+2022-04-16 15:26:49 pid:2533 Error: Call to a member function update() on null in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:214
+Stack trace:
+#0 [internal function]: Events::onClose('7f0000010b55000...')
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(414): call_user_func('Events::onClose', '7f0000010b55000...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #80)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-04-16 15:26:49 pid:2529 worker[YourAppBusinessWorker:2533] exit with status 64000
+2022-04-16 15:26:57 pid:2529 Workerman[start.php] reloading
+2022-04-16 15:26:58 pid:2529 Workerman[start.php] stopping ...
+2022-04-16 15:26:58 pid:2529 Workerman[start.php] has been stopped
+2022-04-16 15:27:00 pid:3283 Workerman[start.php] start in DEBUG mode
+2022-04-16 15:27:29 pid:3283 Workerman[start.php] reloading
+2022-04-16 15:27:30 pid:3283 Workerman[start.php] stopping ...
+2022-04-16 15:27:30 pid:3283 Workerman[start.php] has been stopped
+2022-04-16 15:27:30 pid:3724 Workerman[start.php] start in DEBUG mode
+2022-04-16 15:28:15 pid:3724 Workerman[start.php] reloading
+2022-04-16 15:28:37 pid:3724 Workerman[start.php] reloading
+2022-04-16 15:28:52 pid:3724 Workerman[start.php] stopping ...
+2022-04-16 15:28:52 pid:3724 Workerman[start.php] has been stopped
+2022-04-16 15:28:52 pid:4844 Workerman[start.php] start in DEBUG mode
+2022-04-16 15:29:03 pid:4844 Workerman[start.php] reloading
+2022-04-16 15:29:27 pid:4844 Workerman[start.php] reloading
+2022-04-16 15:29:45 pid:4844 Workerman[start.php] reloading
+2022-04-16 15:29:45 pid:4844 Workerman[start.php] stopping ...
+2022-04-16 15:29:46 pid:4844 Workerman[start.php] has been stopped
+2022-04-16 15:29:46 pid:5606 Workerman[start.php] start in DEBUG mode
+2022-04-16 15:30:32 pid:5606 Workerman[start.php] reloading
+2022-04-16 15:30:33 pid:5606 Workerman[start.php] stopping ...
+2022-04-16 15:30:33 pid:5606 Workerman[start.php] has been stopped
+2022-04-16 15:30:33 pid:6586 Workerman[start.php] start in DEBUG mode
+2022-04-16 15:31:06 pid:6590 Error: Call to a member function query() on null in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:215
+Stack trace:
+#0 [internal function]: Events::onClose('7f0000010b54000...')
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(414): call_user_func('Events::onClose', '7f0000010b54000...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #79)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-04-16 15:31:06 pid:6586 worker[YourAppBusinessWorker:6590] exit with status 64000
+2022-04-16 15:31:15 pid:6588 Error: Call to a member function query() on null in /Users/ivampiresp/Downloads/EdgeFlow/Applications/Flow/Events.php:215
+Stack trace:
+#0 [internal function]: Events::onClose('7f0000010b56000...')
+#1 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(414): call_user_func('Events::onClose', '7f0000010b56000...')
+#2 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Connection/TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Events/Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #81)
+#4 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(2431): Workerman\Events\Select->loop()
+#5 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/gateway-worker/src/BusinessWorker.php(197): Workerman\Worker->run()
+#6 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1555): GatewayWorker\BusinessWorker->run()
+#7 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1397): Workerman\Worker::forkOneWorkerForLinux(Object(GatewayWorker\BusinessWorker))
+#8 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(1371): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/ivampiresp/Downloads/EdgeFlow/vendor/workerman/workerman/Worker.php(549): Workerman\Worker::forkWorkers()
+#10 /Users/ivampiresp/Downloads/EdgeFlow/start.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-04-16 15:31:15 pid:6586 worker[YourAppBusinessWorker:6588] exit with status 64000
+2022-04-16 15:33:22 pid:6586 Workerman[start.php] reloading
+2022-04-16 15:33:23 pid:6586 Workerman[start.php] reloading
+2022-04-16 15:33:24 pid:6586 Workerman[start.php] stopping ...
+2022-04-16 15:33:24 pid:6586 Workerman[start.php] has been stopped
+2022-04-16 15:33:24 pid:10873 Workerman[start.php] start in DEBUG mode

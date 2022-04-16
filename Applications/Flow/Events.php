@@ -22,9 +22,10 @@
 
 // namespace Flow;
 
-use Applications\Models\Server;
 use Workerman\Lib\Timer;
 use \GatewayWorker\Lib\Gateway;
+use Applications\Models\Player;
+use Applications\Models\Server;
 
 
 /**
@@ -46,6 +47,7 @@ class Events
     {
         $auth_timer_id = Timer::add(30, function ($client_id) {
             Gateway::closeClient($client_id);
+            echo '超时断开 ' . $client_id;
         }, array($client_id), false);
         Gateway::updateSession($client_id, array('auth_timer_id' => $auth_timer_id, 'login' => false));
 
@@ -66,6 +68,9 @@ class Events
 
         $msg = json_decode($msg);
 
+        // echo 'Event: ' . $msg->event . PHP_EOL;
+
+
         if ($msg->event !== 'login' && $_SESSION['login'] !== true) {
             // echo $msg->event . PHP_EOL;
             // echo $_SESSION['auth_timer_id'] . PHP_EOL;
@@ -84,7 +89,10 @@ class Events
 
                 if ($server !== null) {
                     echo '登录成功 ' . $server->name . PHP_EOL;
-                    self::send('login_success', $server);
+                    $server->status = 'active';
+                    $server->client_id = $client_id;
+                    $server->save();
+                    self::send('login_success', $client_id);
                 } else {
                     self::send('login_failed', $client_id);
                 }
@@ -94,6 +102,7 @@ class Events
                 Timer::del($_SESSION['auth_timer_id']);
                 $_SESSION['login'] = true;
                 $_SESSION['token'] = $msg->data;
+                $_SESSION['server'] = $server;
                 break;
 
                 // 设置服务器信息
@@ -108,6 +117,78 @@ class Events
 
 
             case 'update_user':
+
+                foreach ($msg->data as $user) {
+                    $player = Player::xuid($user->xuid)->first();
+                    if ($player !== null) {
+                        if ($player->name != $user->name) {
+                            $player->name = $user->name;
+                            $player->save();
+                        }
+                    } else {
+                        $player = new Player();
+                        $player->name = $user->name;
+                        $player->xuid = $user->xuid;
+                        $player->save();
+                    }
+                }
+
+                // echo '修改用户:' . $client_id . '->' . $msg->event . PHP_EOL;
+
+                break;
+
+            case 'get_player':
+                $player = Player::xuid($msg->data)->first();
+
+                if ($player !== null) {
+                    self::send('player_data', $player);
+                } else {
+                    self::send('tell', ['xuid' => $msg->data->xuid, 'code' => 404]);
+                }
+                break;
+
+
+
+            case 'player_logout':
+                $player = Player::xuid($msg->data->xuid)->first();
+                if ($msg->data->nbt !== $player->nbt) {
+                    echo "NBT 已更改 " . $player->name . PHP_EOL;
+                    $player->nbt = $msg->data->nbt;
+                    $player->save();
+                }
+
+                echo '玩家退出' . $msg->data->name . '于服务器 ' . $msg->data->config->name . PHP_EOL;
+                break;
+
+            case 'broadcast_chat':
+                Gateway::sendToAll(json_encode([
+                    'event' => 'chat',
+                    'data' => [
+                        'name' => $msg->data->name,
+                        'msg' => $msg->data->msg,
+                        'server_name' => $msg->data->config->name,
+                        'client_id' => $client_id
+                    ],
+                ]));
+                break;
+
+            case 'next':
+                $server = Server::where('token', '!=', $_SESSION['token'])
+                    ->where('status', 'active')
+                    ->where('version', $_SESSION['server']->version)
+                    ->select(['id', 'name', 'ip_port', 'motd', 'version'])
+                    ->first();
+
+                $ip_port = explode(':', $server->ip_port);
+                $server->ip = $ip_port[0];
+                $server->port = $ip_port[1];
+
+                if ($msg->data->all ?? false) {
+                    self::send('transfer_all', $server);
+                } else {
+                    $server->xuid = $msg->data->xuid ?? null;
+                    self::send('transfer', $server);
+                }
 
 
                 break;
@@ -129,6 +210,11 @@ class Events
      */
     public static function onClose($client_id)
     {
+        $server = Server::where('client_id', $client_id)->first();
+
+        $server->query()->update(['status' => 'offline', 'client_id' => null]);
+
+        echo '服务器离线: ' . $server->name . PHP_EOL;
         // 向所有人发送 
         //    GateWay::sendToAll("$client_id logout\r\n");
     }

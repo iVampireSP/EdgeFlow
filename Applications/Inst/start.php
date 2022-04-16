@@ -1,8 +1,9 @@
 <?php
 
 use GatewayWorker\Lib\Gateway;
-use Workerman\MySQL\Connection;
+use Workerman\Redis\Client;
 use Illuminate\Database\Capsule\Manager;
+use Workerman\Connection\TcpConnection;
 
 $capsule = new Manager;
 // 创建链接
@@ -25,3 +26,9 @@ $capsule->bootEloquent();
 // Gateway::sendToAll('a', 'login_success', '23333333333333333');
 
 Events::$db = $capsule;
+
+// $redis = new Client('redis://127.0.0.1:6379');
+
+// $auth
+// $redis->auth('password', '');
+// Events::$redis = $redis;
