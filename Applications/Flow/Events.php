@@ -45,9 +45,11 @@ class Events
      */
     public static function onConnect($client_id)
     {
+        echo '新的连接 ' . $client_id . PHP_EOL;
         $auth_timer_id = Timer::add(30, function ($client_id) {
+            self::send('login_failed', 'failed');
             Gateway::closeClient($client_id);
-            echo '超时断开 ' . $client_id;
+            echo '超时断开 ' . $client_id . PHP_EOL;
         }, array($client_id), false);
         Gateway::updateSession($client_id, array('auth_timer_id' => $auth_timer_id, 'login' => false));
 
@@ -68,21 +70,21 @@ class Events
 
         $msg = json_decode($msg);
 
+
         // echo 'Event: ' . $msg->event . PHP_EOL;
 
 
         if ($msg->event !== 'login' && $_SESSION['login'] !== true) {
             // echo $msg->event . PHP_EOL;
             // echo $_SESSION['auth_timer_id'] . PHP_EOL;
-            Gateway::closeCurrentClient();
+            // Gateway::closeCurrentClient();
+            // return false;
         }
 
         switch ($msg->event) {
             case 'login':
 
-                if ($msg->data == 'edge_flow') {
-                    Gateway::closeCurrentClient();
-                }
+                echo '正在验证登录...' . PHP_EOL;
 
                 $server = Server::current($msg->data)->first();
                 // $server = self::$db->table('servers')->where('token', $msg->data)->first();
@@ -212,10 +214,16 @@ class Events
     {
         $server = Server::where('client_id', $client_id)->first();
 
-        $server->status = 'offline';
-        $server->client_id = null;
+        if (is_null($server)) {
+            echo '有一台服务器已经关闭。' . $client_id . PHP_EOL;
+        } else {
+            $server->status = 'offline';
+            $server->client_id = null;
 
-        echo '服务器离线: ' . $server->name . PHP_EOL;
+            echo '服务器离线: ' . $server->name . PHP_EOL;
+        }
+
+
         // 向所有人发送 
         //    GateWay::sendToAll("$client_id logout\r\n");
     }
