@@ -2324,3 +2324,6 @@ Stack trace:
 2022-04-17 01:23:04 pid:21365 Workerman[start.php] start in DEBUG mode
 2022-04-17 01:23:06 pid:21365 Workerman[start.php] stopping ...
 2022-04-17 01:23:06 pid:21365 Workerman[start.php] has been stopped
+2022-04-17 01:38:08 pid:32440 Workerman[start.php] start in DEBUG mode
+2022-04-17 01:38:10 pid:32440 Workerman[start.php] stopping ...
+2022-04-17 01:38:10 pid:32440 Workerman[start.php] has been stopped
