@@ -163,6 +163,7 @@ class Events
                 break;
 
             case 'broadcast_chat':
+                echo '广播聊天: ' . $msg->data->name . " {$msg->data->config->name}说:" . $msg->data->msg . PHP_EOL;
                 Gateway::sendToAll(json_encode([
                     'event' => 'chat',
                     'data' => [
