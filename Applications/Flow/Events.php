@@ -210,11 +210,11 @@ class Events
      */
     public static function onClose($client_id)
     {
-        $server = Server::where('client_id', $client_id)->first();
+        $server = Server::where('client_id', $client_id);
 
-        $server->query()->update(['status' => 'offline', 'client_id' => null]);
+        $server->update(['status' => 'offline', 'client_id' => null]);
 
-        echo '服务器离线: ' . $server->name . PHP_EOL;
+        echo '服务器离线: ' . $server->first()->name . PHP_EOL;
         // 向所有人发送 
         //    GateWay::sendToAll("$client_id logout\r\n");
     }
