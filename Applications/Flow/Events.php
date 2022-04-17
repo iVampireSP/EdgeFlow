@@ -223,6 +223,7 @@ class Events
         } else {
             $server->status = 'offline';
             $server->client_id = null;
+            $server->save();
 
             echo '服务器离线: ' . $server->name . PHP_EOL;
         }
