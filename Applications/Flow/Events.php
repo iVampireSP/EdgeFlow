@@ -181,6 +181,10 @@ class Events
                     ->select(['id', 'name', 'ip_port', 'motd', 'version'])
                     ->first();
 
+                if (is_null($server)) {
+                    return false;
+                }
+
                 $ip_port = explode(':', $server->ip_port);
                 $server->ip = $ip_port[0];
                 $server->port = $ip_port[1];
