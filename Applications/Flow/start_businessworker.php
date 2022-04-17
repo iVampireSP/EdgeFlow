@@ -27,7 +27,7 @@ $worker->name = 'EdgeFlow';
 // bussinessWorker进程数量
 $worker->count = 4;
 // 服务注册地址
-$worker->registerAddress = '127.0.0.1:1001';
+$worker->registerAddress = '127.0.0.1:14301';
 
 // 如果不是在根目录启动，则运行runAll方法
 if(!defined('GLOBAL_START'))
