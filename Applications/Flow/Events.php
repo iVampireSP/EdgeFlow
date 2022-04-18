@@ -148,12 +148,11 @@ class Events
                     echo
                     '已为' . $msg->data->name . '创建公开服务器信息' . PHP_EOL;
                 } else {
-                    $server = Server::current($_SESSION['token'])->update([
-                        'name' => $msg->data->name,
-                        'motd' => $msg->data->motd,
-                        'version' => $msg->data->version,
-                        'ip_port' => $msg->data->ip_port,
-                    ]);
+                    $server = Server::current($_SESSION['token'])->first();
+                    $server->name = $msg->data->name;
+                    $server->motd = $msg->data->motd;
+                    $server->version = $msg->data->version;
+                    $server->ip_port = $msg->data->ip_port ?? $server->ip_port;
                 }
 
                 break;
