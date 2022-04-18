@@ -200,6 +200,11 @@ class Events
 
                 break;
 
+
+            case 'validate_user':
+                echo '玩家加入:' . $msg->data->name . PHP_EOL;
+                break;
+
             default:
                 echo '未知操作:' . $client_id . '->' . $msg->event . PHP_EOL;
                 break;
