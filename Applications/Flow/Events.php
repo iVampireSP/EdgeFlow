@@ -90,7 +90,7 @@ class Events
                 // $server = self::$db->table('servers')->where('token', $msg->data)->first();
 
                 // 判断是不是 public
-                if ($msg->data == null || $msg->data == 'Your token here') {
+                if ($msg->data == null || $msg->data == 'Your key here') {
                     // Server::create([
                     //     'name' => $msg->data->name,
                     //     'motd' => $msg->data->motd,
@@ -125,7 +125,7 @@ class Events
                 if ($_SESSION['token'] == null) {
                     if ($msg->data->ip_port == null) {
                         // 拒绝登录
-                        '拒绝公开登录(无IP和端口)' . $msg->data->name . PHP_EOL;
+                        echo '拒绝公开登录(没有设置IP)' . $msg->data->name . PHP_EOL;
 
                         self::send('login_failed', $client_id);
                         return;
