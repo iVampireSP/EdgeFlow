@@ -90,7 +90,7 @@ class Events
                 // $server = self::$db->table('servers')->where('token', $msg->data)->first();
 
                 // 判断是不是 public
-                if ($msg->data->token == null || $msg->data->token == 'Your token here') {
+                if ($msg->data == null || $msg->data == 'Your token here') {
                     // Server::create([
                     //     'name' => $msg->data->name,
                     //     'motd' => $msg->data->motd,
@@ -144,7 +144,7 @@ class Events
                         'version' => $msg->data->version,
                         'ip_port' => $msg->data->ip_port,
                     ]);
-                    
+
                     echo
                     '已为' . $msg->data->name . '创建公开服务器信息' . PHP_EOL;
                 } else {
