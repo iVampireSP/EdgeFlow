@@ -89,20 +89,6 @@ class Events
                 $server = Server::current($msg->data)->first();
                 // $server = self::$db->table('servers')->where('token', $msg->data)->first();
 
-                // 判断是不是 public
-                if ($msg->data == null || $msg->data == 'Your key here') {
-                    // Server::create([
-                    //     'name' => $msg->data->name,
-                    //     'motd' => $msg->data->motd,
-                    //     'motd' => $msg->data->motd,
-                    // ]);
-                    echo '登录 公开服务器 ' . PHP_EOL;
-                    Timer::del($_SESSION['auth_timer_id']);
-                    $_SESSION['login'] = true;
-                    $_SESSION['token'] = null;
-                    $_SESSION['server'] = false;
-                }
-
                 if ($server !== null) {
                     echo '登录成功 ' . $server->name . PHP_EOL;
                     $server->status = 'active';
@@ -113,6 +99,7 @@ class Events
                     self::send('login_failed', $client_id);
                 }
 
+                // self::send('login_failed', $client_id);
                 // 记录session，表明认证成功
                 Timer::del($_SESSION['auth_timer_id']);
                 $_SESSION['login'] = true;
@@ -122,40 +109,14 @@ class Events
 
                 // 设置服务器信息
             case 'server_data':
-                if ($_SESSION['token'] == null) {
-                    if ($msg->data->ip_port == null) {
-                        // 拒绝登录
-                        echo '拒绝公开登录(没有设置IP)' . $msg->data->name . PHP_EOL;
-
-                        self::send('login_failed', $client_id);
-                        return;
-                    }
-                    $try_server = Server::where('ip_port', $msg->data->ip_port)->first();
-                    if ($try_server->token !== null) {
-                        echo
-                        '拒绝公开登录' . $msg->data->name . PHP_EOL;
-                        self::send('login_failed', $client_id);
-                        return;
-                    }
-
-                    Server::create([
-                        'name' => $msg->data->name,
-                        'motd' => $msg->data->motd,
-                        'version' => $msg->data->version,
-                        'ip_port' => $msg->data->ip_port,
-                    ]);
-
-                    echo
-                    '已为' . $msg->data->name . '创建公开服务器信息' . PHP_EOL;
-                } else {
-                    $server = Server::current($_SESSION['token'])->first();
-                    $server->name = $msg->data->name;
-                    $server->motd = $msg->data->motd;
-                    $server->version = $msg->data->version;
-                    $server->ip_port = $msg->data->ip_port ?? $server->ip_port;
-                }
+                $server = Server::current($_SESSION['token'])->update([
+                    'name' => $msg->data->name,
+                    'motd' => $msg->data->motd,
+                    'version' => $msg->data->version,
+                ]);
 
                 break;
+
 
             case 'update_user':
 
