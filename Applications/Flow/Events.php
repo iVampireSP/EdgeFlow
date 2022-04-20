@@ -202,7 +202,7 @@ class Events
 
 
             case 'validate_user':
-                echo '玩家加入:' . $msg->data->name . PHP_EOL;
+                echo '玩家加入:' . $msg->data->name ?? '未知' . PHP_EOL;
                 break;
 
             default:
