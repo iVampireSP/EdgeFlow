@@ -203,7 +203,11 @@ class Events
 
 
             case 'validate_user':
-                echo '玩家加入:' . $msg->data->name ?? '未知' . PHP_EOL;
+                if (isset($msg->data->name)) {
+                    echo '玩家加入:' . $msg->data->name . PHP_EOL;
+                } else {
+                    echo '有位玩家加入了服务器但是无法获取其名称。' . PHP_EOL;
+                }
                 break;
 
             default:
