@@ -178,6 +178,7 @@ class Events
             case 'next':
                 $server = Server::where('token', '!=', $_SESSION['token'])
                     ->where('status', 'active')
+                    ->where('ip_port', '!=', null)
                     ->where('version', $_SESSION['server']->version)
                     ->select(['id', 'name', 'ip_port', 'motd', 'version'])
                     ->first();
