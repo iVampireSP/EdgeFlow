@@ -121,19 +121,6 @@ class Events
         //         echo '玩家退出' . $msg->data->name . '于服务器 ' . $msg->data->config->name . PHP_EOL;
         //         break;
 
-        //     case 'broadcast_chat':
-        //         echo '广播聊天: ' . $msg->data->name . "[{$msg->data->config->name}]说:" . $msg->data->msg . PHP_EOL;
-        //         Gateway::sendToAll(json_encode([
-        //             'event' => 'chat',
-        //             'data' => [
-        //                 'name' => $msg->data->name,
-        //                 'msg' => $msg->data->msg,
-        //                 'server_name' => $msg->data->config->name,
-        //                 'client_id' => $client_id
-        //             ],
-        //         ]));
-        //         break;
-
 
 
         //     case 'validate_user':

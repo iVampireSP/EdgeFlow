@@ -162,10 +162,9 @@ mc.regPlayerCmd('ts', '带你去下一个服务器', (player) => {
 })
 
 mc.regPlayerCmd('fs', '手动将你的数据上传到 Flow 网络。', (player) => {
-    save_player(player)
-    
-    player.tell('手动上传数据到 Flow 网络成功。')
-  
+  save_player(player)
+
+  player.tell('手动上传数据到 Flow 网络成功。')
 })
 
 mc.regConsoleCmd('tsa', '传送所有玩家到其他服务器', () => {
@@ -263,59 +262,30 @@ mc.listen('onChat', (player, msg) => {
 //   }, 5000)
 // })
 
-// var this_player
-// wsc.listen('onTextReceived', (msg) => {
-//   // log(msg)
-//   msg = JSON.parse(msg)
+wsc.listen('onTextReceived', (msg) => {
+  // log(msg)
+  msg = JSON.parse(msg)
 
-//   switch (msg.event) {
+  switch (msg.event) {
+    case 'chat':
+      if (!config.receive_chat) {
+        break
+      }
+      if (msg.data.client_id !== client_id) {
+        var chat_msg = `[${msg.data.server_name}]${msg.data.name}: ${msg.data.msg}`
+        mc.broadcast(chat_msg, 0)
+        log('<Chat> ' + chat_msg)
+      }
 
-//     case 'player_data':
-//       var this_player = mc.getPlayer(msg.data.name)
+      break
 
-//       this_player.sendText('Edge Standing 强力驱动')
+    case 'upgrade':
+      log('正在更新 Flow. ')
+      mc.runcmd('ll reload flow.js')
 
-//       if (msg.data.nbt == null) {
-//         this_player.sendText('你的数据无需同步')
-
-//         break
-//       }
-
-//       // 写入 NBT
-//       let readNBT = NBT.parseSNBT(msg.data.nbt)
-//       let nbt = this_player.getNbt()
-
-//       nbt.setTag('Offhand', readNBT.getTag('OffHand'))
-//       nbt.setTag('Inventory', readNBT.getTag('Inventory'))
-//       nbt.setTag('Armor', readNBT.getTag('Armor'))
-//       nbt.setTag('EnderChestInventory', readNBT.getTag('EnderChest'))
-
-//       this_player.setNbt(nbt)
-//       // this_player.tell('数据已经重新同步，请破坏或者拾取/使用任意方块以刷新物品栏。')
-//       this_player.refreshItems()
-
-//       break
-
-//     case 'chat':
-//       if (!config.receive_chat) {
-//         break
-//       }
-//       if (msg.data.client_id !== client_id) {
-//         var chat_msg = `[${msg.data.server_name}]${msg.data.name}: ${msg.data.msg}`
-//         mc.broadcast(chat_msg, 0)
-//         log('<Chat> ' + chat_msg)
-//       }
-
-//       break
-
-//     case 'upgrade':
-//       log('正在更新 Flow. ')
-//       mc.runcmd('ll reload flow.js')
-
-//       break
-
-//   }
-// })
+      break
+  }
+})
 
 // mc.regPlayerCmd('tui', '传送服务器 UI', (player) => {
 //   send('getRandomServers', { player: { name: player.name } })

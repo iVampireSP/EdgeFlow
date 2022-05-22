@@ -63,7 +63,7 @@ class Process
             'version' => $data->version,
         ]);
 
-        return 'success';
+        return true;
     }
 
     public function update_user($data)
@@ -90,7 +90,7 @@ class Process
             }
         }
 
-        return 'success';
+        return true;
     }
 
     public function next()
@@ -113,8 +113,20 @@ class Process
         }
     }
 
-    public function save_player($xuid)
+    public function broadcast_chat($data)
     {
+        $this->log('广播聊天: ' . $data->name . "[{$data->config->name}]说:" . $data->msg);
+        Gateway::sendToAll(json_encode([
+            'event' => 'chat',
+            'data' => [
+                'name' => $data->name,
+                'msg' => $data->msg,
+                'server_name' => $data->config->name,
+                'client_id' => $this->client_id
+            ],
+        ]));
+
+        return true;
     }
 
     public function getServer()
