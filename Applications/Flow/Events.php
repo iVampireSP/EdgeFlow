@@ -26,7 +26,7 @@ use Workerman\Lib\Timer;
 use \GatewayWorker\Lib\Gateway;
 use Applications\Models\Player;
 use Applications\Models\Server;
-
+use Process;
 
 /**
  * 主逻辑
@@ -37,12 +37,8 @@ class Events
 {
     public static $db = null;
     public static $redis = null;
-    /**
-     * 当客户端连接时触发
-     * 如果业务不需此回调可以删除onConnect
-     * 
-     * @param int $client_id 连接id
-     */
+
+
     public static function onConnect($client_id)
     {
         echo '新的连接 ' . $client_id . PHP_EOL;
@@ -66,154 +62,92 @@ class Events
      */
     public static function onMessage($client_id, $msg)
     {
-        $_SESSION = Gateway::getSession($client_id);
-
         $msg = json_decode($msg);
-
-
         // echo 'Event: ' . $msg->event . PHP_EOL;
 
 
-        if ($msg->event !== 'login' && $_SESSION['login'] !== true) {
-            // echo $msg->event . PHP_EOL;
-            // echo $_SESSION['auth_timer_id'] . PHP_EOL;
-            // Gateway::closeCurrentClient();
-            // return false;
+        // if ($msg->event !== 'login' && $_SESSION['login'] !== true) {
+        //     // echo $msg->event . PHP_EOL;
+        //     // echo $_SESSION['auth_timer_id'] . PHP_EOL;
+        //     // Gateway::closeCurrentClient();
+        //     // return false;
+        // }
+
+
+        $process = new Process($client_id);
+
+        $event = $msg->event;
+        // if method exists
+        if (method_exists($process, $event)) {
+            $process->msg = $msg;
+            $return = $process->$event($msg->data);
+        } else {
+            echo '未知操作:' . $client_id . '->' . $msg->event . PHP_EOL;
         }
 
-        switch ($msg->event) {
-            case 'login':
+        $data = [
+            'clientEvent' => $msg->event,
+            'data' => $return ?? 'failed',
+        ];
 
-                echo '正在验证登录...' . PHP_EOL;
+        $data = json_encode($data);
 
-                $server = Server::current($msg->data)->first();
-                // $server = self::$db->table('servers')->where('token', $msg->data)->first();
+        Gateway::sendToCurrentClient($data);
 
-                if ($server !== null) {
-                    echo '登录成功 ' . $server->name . PHP_EOL;
-                    $server->status = 'active';
-                    $server->client_id = $client_id;
-                    $server->save();
-                    self::send('login_success', $client_id);
-                } else {
-                    self::send('login_failed', $client_id);
-                }
+        $process->log($data);
 
-                // self::send('login_failed', $client_id);
-                // 记录session，表明认证成功
-                Timer::del($_SESSION['auth_timer_id']);
-                $_SESSION['login'] = true;
-                $_SESSION['token'] = $msg->data;
-                $_SESSION['server'] = $server;
-                break;
+        unset($process);
 
-                // 设置服务器信息
-            case 'server_data':
-                $server = Server::current($_SESSION['token'])->update([
-                    'name' => $msg->data->name,
-                    'motd' => $msg->data->motd,
-                    'version' => $msg->data->version,
-                ]);
+        //     case 'get_player':
+        //         $player = Player::xuid($msg->data)->first();
 
-                break;
-
-
-            case 'update_user':
-
-                foreach ($msg->data as $user) {
-                    $player = Player::xuid($user->xuid)->first();
-                    if ($player !== null) {
-                        if ($player->name != $user->name) {
-                            $player->name = $user->name;
-                            $player->save();
-                        }
-                    } else {
-                        $player = new Player();
-                        $player->name = $user->name;
-                        $player->xuid = $user->xuid;
-                        $player->save();
-                    }
-                }
-
-                // echo '修改用户:' . $client_id . '->' . $msg->event . PHP_EOL;
-
-                break;
-
-            case 'get_player':
-                $player = Player::xuid($msg->data)->first();
-
-                if ($player !== null) {
-                    self::send('player_data', $player);
-                } else {
-                    self::send('tell', ['xuid' => $msg->data->xuid, 'code' => 404]);
-                }
-                break;
+        //         if ($player !== null) {
+        //             self::send('player_data', $player);
+        //         } else {
+        //             self::send('tell', ['xuid' => $msg->data->xuid, 'code' => 404]);
+        //         }
+        //         break;
 
 
 
-            case 'player_logout':
-                $player = Player::xuid($msg->data->xuid)->first();
-                if ($msg->data->nbt !== $player->nbt) {
-                    echo "NBT 已更改 " . $player->name . PHP_EOL;
-                    $player->nbt = $msg->data->nbt;
-                    $player->save();
-                }
+        //     case 'player_logout':
+        //         $player = Player::xuid($msg->data->xuid)->first();
+        //         if ($msg->data->nbt !== $player->nbt) {
+        //             echo "NBT 已更改 " . $player->name . PHP_EOL;
+        //             $player->nbt = $msg->data->nbt;
+        //             $player->save();
+        //         }
 
-                echo '玩家退出' . $msg->data->name . '于服务器 ' . $msg->data->config->name . PHP_EOL;
-                break;
+        //         echo '玩家退出' . $msg->data->name . '于服务器 ' . $msg->data->config->name . PHP_EOL;
+        //         break;
 
-            case 'broadcast_chat':
-                echo '广播聊天: ' . $msg->data->name . "[{$msg->data->config->name}]说:" . $msg->data->msg . PHP_EOL;
-                Gateway::sendToAll(json_encode([
-                    'event' => 'chat',
-                    'data' => [
-                        'name' => $msg->data->name,
-                        'msg' => $msg->data->msg,
-                        'server_name' => $msg->data->config->name,
-                        'client_id' => $client_id
-                    ],
-                ]));
-                break;
-
-            case 'next':
-                $server = Server::where('token', '!=', $_SESSION['token'])
-                    ->where('status', 'active')
-                    ->where('ip_port', '!=', null)
-                    ->where('version', $_SESSION['server']->version)
-                    ->select(['id', 'name', 'ip_port', 'motd', 'version'])
-                    ->first();
-
-                if (is_null($server)) {
-                    return false;
-                }
-
-                $ip_port = explode(':', $server->ip_port);
-                $server->ip = $ip_port[0];
-                $server->port = $ip_port[1];
-
-                if ($msg->data->all ?? false) {
-                    self::send('transfer_all', $server);
-                } else {
-                    $server->xuid = $msg->data->xuid ?? null;
-                    self::send('transfer', $server);
-                }
+        //     case 'broadcast_chat':
+        //         echo '广播聊天: ' . $msg->data->name . "[{$msg->data->config->name}]说:" . $msg->data->msg . PHP_EOL;
+        //         Gateway::sendToAll(json_encode([
+        //             'event' => 'chat',
+        //             'data' => [
+        //                 'name' => $msg->data->name,
+        //                 'msg' => $msg->data->msg,
+        //                 'server_name' => $msg->data->config->name,
+        //                 'client_id' => $client_id
+        //             ],
+        //         ]));
+        //         break;
 
 
-                break;
 
+        //     case 'validate_user':
+        //         if (isset($msg->data->name)) {
+        //             echo '玩家加入:' . $msg->data->name . PHP_EOL;
+        //         } else {
+        //             echo '有位玩家加入了服务器但是无法获取其名称。' . PHP_EOL;
+        //         }
+        //         break;
 
-            case 'validate_user':
-                if (isset($msg->data->name)) {
-                    echo '玩家加入:' . $msg->data->name . PHP_EOL;
-                } else {
-                    echo '有位玩家加入了服务器但是无法获取其名称。' . PHP_EOL;
-                }
-                break;
-
-            default:
-                echo '未知操作:' . $client_id . '->' . $msg->event . PHP_EOL;
-                break;
-        }
+        //     default:
+        //         echo '未知操作:' . $client_id . '->' . $msg->event . PHP_EOL;
+        //         break;
+        // }
 
         // 向所有人发送 
         // Gateway::sendToAll("$client_id said $message\r\n");
