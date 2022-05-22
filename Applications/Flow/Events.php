@@ -36,6 +36,7 @@ use Process;
 class Events
 {
     public static $db = null;
+    public static $debug = false;
     public static $redis = null;
 
 
@@ -94,7 +95,9 @@ class Events
 
         Gateway::sendToCurrentClient($data);
 
-        $process->log($data);
+        if (self::$debug) {
+            $process->log($data);
+        }
 
         unset($process);
 

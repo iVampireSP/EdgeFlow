@@ -28,6 +28,7 @@ $capsule->bootEloquent();
 // Gateway::sendToAll('a', 'login_success', '23333333333333333');
 
 Events::$db = $capsule;
+Events::$debug = $config->debug ?? false;
 
 // $redis = new Client('redis://127.0.0.1:6379');
 
