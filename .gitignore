@@ -1,4 +1,4 @@
 vendor
 .DS_Store
-scripts/real_flow.js
 vendor/workerman/workerman.log
+workerman.log
