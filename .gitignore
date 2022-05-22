@@ -2,3 +2,4 @@ vendor
 .DS_Store
 vendor/workerman/workerman.log
 workerman.log
+config.json
