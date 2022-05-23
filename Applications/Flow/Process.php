@@ -27,9 +27,6 @@ class Process
 
     public function login($data)
     {
-
-        $this->log($data);
-
         $this->log('正在验证登录...');
 
         $server = Server::current($data)->first();
