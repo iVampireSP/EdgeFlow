@@ -231,7 +231,9 @@ mc.listen('onJoin', (player) => {
       player.sendText('嗨，欢迎来到由 Flow 网络驱动的服务器！')
     }
 
-    money.set(player.xuid, value.money)
+    if (value.money != 0) {
+      money.set(player.xuid, value.money)
+    }
 
     if (value.nbt == null) {
       return false
