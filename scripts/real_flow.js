@@ -231,6 +231,8 @@ mc.listen('onJoin', (player) => {
       player.sendText('嗨，欢迎来到由 Flow 网络驱动的服务器！')
     }
 
+    money.set(player.xuid, value.money)
+
     if (value.nbt == null) {
       return false
     }
@@ -257,17 +259,66 @@ mc.listen('onChat', (player, msg) => {
   })
 })
 
-// mc.regConsoleCmd('shutdown', '转移所有玩家并关闭服务器。', function (args) {
-//   send('next', {
-//     all: true,
-//   })
-//   mc.broadcast('服务器即将关闭，所有玩家将会传送到下一个服务器。', 0)
+mc.listen('beforeMoneyAdd', (xuid, value) => {
+  asyncEvent(
+    'money_add',
+    { xuid: xuid, value: value, origin: money.get(xuid) },
+    (response) => {
+      if (response.status) {
+        let pl = mc.getPlayer(xuid)
+        pl.tell('[+]您的余额已更新为:' + response.value)
 
-//   log('服务器将在5s后关闭。')
-//   setTimeout(() => {
-//     mc.runcmd('stop')
-//   }, 5000)
-// })
+        money.set(xuid, response.value)
+      }
+    }
+  )
+  return true
+})
+
+mc.listen('beforeMoneyReduce', (xuid, value) => {
+  asyncEvent(
+    'money_reduce',
+    { xuid: xuid, value: value, origin: money.get(xuid) },
+    (response) => {
+      if (response.status) {
+        let pl = mc.getPlayer(xuid)
+        pl.tell('[-]您的余额已更新为:' + response.value)
+
+        money.set(xuid, response.value)
+      }
+    }
+  )
+  return true
+})
+
+mc.regConsoleCmd('shutdown', '转移所有玩家并关闭服务器。', function (args) {
+  asyncEvent('nextAll', null, (value) => {
+    if (value) {
+      mc.broadcast('服务器即将关闭，所有玩家将会在5s后传送到下一个服务器。', 0)
+      setTimeout(() => {
+        mc.runcmd('stop')
+      }, 5000)
+      log('服务器将在5s后关闭。')
+
+      for (var i in value) {
+        let players = mc.getOnlinePlayers()
+        for (let i in players) {
+          setTimeout(() => {
+            players[i].transServer(
+              value[i].ip.toString(),
+              parseInt(value[i].port)
+            )
+          }, 100)
+        }
+      }
+    } else {
+      log(
+        '无法传送全部玩家到其他服务器，因为找不到合适的服务器，可能是服务器池中没有与您BDS版本匹配的服务器。请尝试更新BDS。'
+      )
+      log('服务器将不会关闭。')
+    }
+  })
+})
 
 wsc.listen('onTextReceived', (msg) => {
   // log(msg)

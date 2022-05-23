@@ -154,7 +154,7 @@ class Process
         }
 
 
-        $this->log('num:' . $num);
+        // $this->log('num:' . $num);
 
         foreach ($servers as $server) {
             $ip_port = explode(':', $server->ip_port);
@@ -163,6 +163,41 @@ class Process
         }
 
         return $servers;
+    }
+    public function money_add($data)
+    {
+        $player = Player::xuid($data->xuid)->first();
+        if ($player->money == 0) {
+            $player->money = $data->origin;
+        } else {
+            $player->money += $data->value;
+        }
+
+        $player->save();
+
+        return [
+            'status' => true,
+            'value' => $player->money,
+        ];
+    }
+
+    public function money_reduce($data)
+    {
+        $player = Player::xuid($data->xuid)->first();
+        if ($player->money == 0) {
+            $player->money = $data->origin;
+        } else {
+            $player->money -= $data->value;
+        }
+
+        $player->save();
+
+        return [
+            'status' => true,
+            'value' => $player->money,
+        ];
+
+        // $this->log($data);
     }
 
     public function log($str)
