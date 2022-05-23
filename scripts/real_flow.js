@@ -168,7 +168,6 @@ mc.regPlayerCmd('fs', '手动将你的数据上传到 Flow 网络。', (player) 
 })
 
 mc.regConsoleCmd('tsa', '传送所有玩家到其他服务器', () => {
-  const players = mc.getOnlinePlayers()
   asyncEvent('nextAll', null, (value) => {
     if (value) {
       if (value) {
