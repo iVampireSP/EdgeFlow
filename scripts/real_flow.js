@@ -4,6 +4,7 @@ let config = {
   motd: 'Server Motd',
   ip_port: '123.456.789.1:19132',
   receive_chat: true,
+  syncMoney: false,
 }
 
 const serverAddrPort = '10.37.129.2:3512'
@@ -29,6 +30,11 @@ var wsc = new WSClient()
 var connected = false
 var client_id = null
 let save_count = 0
+let syncMoney = config.syncMoney ?? false
+
+if (syncMoney) {
+    log('警告：经济同步已启用，这是一个实验性的功能，可能会造成意想不到的后果。')
+}
 
 const send = async (event, data) => {
   let json = JSON.stringify({
@@ -231,8 +237,10 @@ mc.listen('onJoin', (player) => {
       player.sendText('嗨，欢迎来到由 Flow 网络驱动的服务器！')
     }
 
-    if (value.money != 0) {
-      money.set(player.xuid, value.money)
+    if (syncMoney) {
+      if (value.money != 0) {
+        money.set(player.xuid, value.money)
+      }
     }
 
     if (value.nbt == null) {
@@ -261,37 +269,39 @@ mc.listen('onChat', (player, msg) => {
   })
 })
 
-mc.listen('beforeMoneyAdd', (xuid, value) => {
-  asyncEvent(
-    'money_add',
-    { xuid: xuid, value: value, origin: money.get(xuid) },
-    (response) => {
-      if (response.status) {
-        let pl = mc.getPlayer(xuid)
-        pl.tell('[+]您的余额已更新为:' + response.value)
+if (syncMoney) {
+  mc.listen('beforeMoneyAdd', (xuid, value) => {
+    asyncEvent(
+      'money_add',
+      { xuid: xuid, value: value, origin: money.get(xuid) },
+      (response) => {
+        if (response.status) {
+          let pl = mc.getPlayer(xuid)
+          pl.tell('[+]您的余额已更新为:' + response.value)
 
-        money.set(xuid, response.value)
+          money.set(xuid, response.value)
+        }
       }
-    }
-  )
-  return true
-})
+    )
+    return true
+  })
 
-mc.listen('beforeMoneyReduce', (xuid, value) => {
-  asyncEvent(
-    'money_reduce',
-    { xuid: xuid, value: value, origin: money.get(xuid) },
-    (response) => {
-      if (response.status) {
-        let pl = mc.getPlayer(xuid)
-        pl.tell('[-]您的余额已更新为:' + response.value)
+  mc.listen('beforeMoneyReduce', (xuid, value) => {
+    asyncEvent(
+      'money_reduce',
+      { xuid: xuid, value: value, origin: money.get(xuid) },
+      (response) => {
+        if (response.status) {
+          let pl = mc.getPlayer(xuid)
+          pl.tell('[-]您的余额已更新为:' + response.value)
 
-        money.set(xuid, response.value)
+          money.set(xuid, response.value)
+        }
       }
-    }
-  )
-  return true
-})
+    )
+    return true
+  })
+}
 
 mc.regConsoleCmd('shutdown', '转移所有玩家并关闭服务器。', function (args) {
   asyncEvent('nextAll', null, (value) => {
