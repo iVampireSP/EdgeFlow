@@ -170,15 +170,13 @@ mc.regPlayerCmd('fs', '手动将你的数据上传到 Flow 网络。', (player) 
 mc.regConsoleCmd('tsa', '传送所有玩家到其他服务器', () => {
   asyncEvent('nextAll', null, (value) => {
     if (value) {
-      if (value) {
-        log('将全部玩家带去： ' + value.name)
-        let players = mc.getOnlinePlayers()
-        for (let i in players) {
-          players[i].tell('管理员将您带去 ' + value.name)
-          setTimeout(() => {
-            players[i].transServer(value.ip.toString(), parseInt(value.port))
-          }, 100)
-        }
+      log('将全部玩家带去： ' + value.name)
+      let players = mc.getOnlinePlayers()
+      for (let i in players) {
+        players[i].tell('管理员将您带去 ' + value.name)
+        setTimeout(() => {
+          players[i].transServer(value.ip.toString(), parseInt(value.port))
+        }, 100)
       }
     } else {
       log(
