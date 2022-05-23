@@ -95,12 +95,12 @@ class Process
 
     public function next()
     {
-        return $this->getServer();
+        return $this->getServers(1);
     }
 
     public function nextAll()
     {
-        return $this->getServer();
+        return $this->getServers(1);
     }
 
     public function player_data($xuid)
@@ -129,24 +129,43 @@ class Process
         return true;
     }
 
-    public function getServer()
+    public function get_random_servers()
     {
-        $server = Server::where('token', '!=', $this->session['token'])
+        return $this->getServers(5);
+    }
+
+    public function player_logout($player)
+    {
+        // var_dump($player);
+        // $this->log('玩家退出' . $player->name . '于服务器 ' . $player->config->name);
+        return true;
+    }
+
+    public function getServers($num = 1)
+    {
+        $servers = Server::where('token', '!=', $this->session['token'])
             ->where('status', 'active')
             ->where('ip_port', '!=', null)
             ->where('version', $this->session['server']->version)
             ->select(['id', 'name', 'ip_port', 'motd', 'version'])
-            ->first();
+            ->inRandomOrder()
+            ->take($num)
+            ->get();
 
-        if (is_null($server)) {
+        if (count($servers) === 0) {
             return false;
         }
 
-        $ip_port = explode(':', $server->ip_port);
-        $server->ip = $ip_port[0];
-        $server->port = $ip_port[1];
 
-        return $server;
+        $this->log('num:' . $num);
+
+        foreach ($servers as $server) {
+            $ip_port = explode(':', $server->ip_port);
+            $server->ip = $ip_port[0];
+            $server->port = $ip_port[1];
+        }
+
+        return $servers;
     }
 
     public function log($str)

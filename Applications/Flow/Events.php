@@ -99,18 +99,6 @@ class Events
 
         unset($process);
 
-        //     case 'get_player':
-        //         $player = Player::xuid($msg->data)->first();
-
-        //         if ($player !== null) {
-        //             self::send('player_data', $player);
-        //         } else {
-        //             self::send('tell', ['xuid' => $msg->data->xuid, 'code' => 404]);
-        //         }
-        //         break;
-
-
-
         //     case 'player_logout':
         //         $player = Player::xuid($msg->data->xuid)->first();
         //         if ($msg->data->nbt !== $player->nbt) {

@@ -143,15 +143,20 @@ wsc.listen('onError', function () {
 mc.regPlayerCmd('ts', '带你去下一个服务器', (player) => {
   asyncEvent('next', { xuid: player.xuid }, (value) => {
     if (value) {
-      log(
-        '已将' +
-          player.name +
-          '传送到' +
-          value.ip.toString() +
-          ':' +
-          parseInt(value.port)
-      )
-      player.transServer(value.ip.toString(), parseInt(value.port))
+      for (var i in value) {
+        log(
+          '已将' +
+            player.name +
+            '传送到' +
+            value[i].name +
+            '(' +
+            value[i].ip.toString() +
+            ':' +
+            parseInt(value[i].port) +
+            ')'
+        )
+        player.transServer(value[i].ip.toString(), parseInt(value[i].port))
+      }
     } else {
       player.tell('暂时找不到合适的服务器')
       log(
@@ -170,13 +175,18 @@ mc.regPlayerCmd('fs', '手动将你的数据上传到 Flow 网络。', (player) 
 mc.regConsoleCmd('tsa', '传送所有玩家到其他服务器', () => {
   asyncEvent('nextAll', null, (value) => {
     if (value) {
-      log('将全部玩家带去： ' + value.name)
-      let players = mc.getOnlinePlayers()
-      for (let i in players) {
-        players[i].tell('管理员将您带去 ' + value.name)
-        setTimeout(() => {
-          players[i].transServer(value.ip.toString(), parseInt(value.port))
-        }, 100)
+      for (var i in value) {
+        log('将全部玩家带去： ' + value[i].name)
+        let players = mc.getOnlinePlayers()
+        for (let i in players) {
+          players[i].tell('管理员将您带去 ' + value[i].name)
+          setTimeout(() => {
+            players[i].transServer(
+              value[i].ip.toString(),
+              parseInt(value[i].port)
+            )
+          }, 100)
+        }
       }
     } else {
       log(
@@ -192,6 +202,7 @@ mc.regConsoleCmd('tsa', '传送所有玩家到其他服务器', () => {
 // })
 
 mc.listen('onLeft', (pl) => {
+  send('player_logout', pl)
   save_player(pl)
 })
 
@@ -284,9 +295,28 @@ wsc.listen('onTextReceived', (msg) => {
   }
 })
 
-// mc.regPlayerCmd('tui', '传送服务器 UI', (player) => {
-//   send('getRandomServers', { player: { name: player.name } })
-// })
+mc.regPlayerCmd('tui', '传送服务器 UI', (player) => {
+  asyncEvent('get_random_servers', null, (value) => {
+    let servers = []
+
+    let form = mc.newSimpleForm()
+
+    form.setTitle('抉择')
+    form.setContent('您接下来要去哪里？')
+
+    for (let i in value) {
+      servers.push(value[i])
+    }
+
+    for (let i in servers) {
+      form.addButton(servers[i].name)
+    }
+
+    player.sendForm(form, (pl, id) => {
+      pl.transServer(servers[id].ip.toString(), parseInt(servers[id].port))
+    })
+  })
+})
 
 function asyncEvent(event, data, callback) {
   const next = async () => {
