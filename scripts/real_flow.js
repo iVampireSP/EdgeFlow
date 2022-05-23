@@ -363,8 +363,8 @@ mc.regPlayerCmd('tui', '传送服务器 UI', (player) => {
 
     let form = mc.newSimpleForm()
 
-    form.setTitle('抉择')
-    form.setContent('您接下来要去哪里？')
+    form.setTitle('接下来去哪里？')
+    form.setContent('从下列服务器中进行选择。')
 
     for (let i in value) {
       servers.push(value[i])
