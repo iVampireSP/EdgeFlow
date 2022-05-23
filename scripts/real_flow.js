@@ -250,7 +250,6 @@ mc.listen('onJoin', (player) => {
 })
 
 mc.listen('onChat', (player, msg) => {
-  // 检查玩家是否绑定账号
   send('broadcast_chat', {
     name: player.name,
     msg: msg,
