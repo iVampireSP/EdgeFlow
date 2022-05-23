@@ -234,7 +234,7 @@ mc.listen('onJoin', (player) => {
     player.sendText('Edge Standing 强力驱动')
 
     if (!value) {
-      player.sendText('嗨，欢迎来到由 Flow 网络驱动的服务器！')
+        player.sendText('嗨，欢迎来到由 Flow 网络驱动的服务器！')
     }
 
     if (syncMoney) {
@@ -256,8 +256,8 @@ mc.listen('onJoin', (player) => {
     nbt.setTag('Armor', readNBT.getTag('Armor'))
     nbt.setTag('EnderChestInventory', readNBT.getTag('EnderChest'))
 
-    value.setNbt(nbt)
-    value.refreshItems()
+    player.setNbt(nbt)
+    player.refreshItems()
   })
 })
 
