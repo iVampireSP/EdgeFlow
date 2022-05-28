@@ -155,7 +155,7 @@ class Process
 
     public function getServer($id)
     {
-        $server = Server::select(['name', 'status', 'ip_port'])->find($id);
+        $server = Server::select(['name', 'status', 'ip_port', 'alert'])->find($id);
         if ($server !== null) {
             $ip_port = explode(':', $server->ip_port);
             $server->ip = $ip_port[0];
