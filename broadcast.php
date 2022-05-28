@@ -4,7 +4,7 @@ use GatewayWorker\Lib\Gateway;
 
 require_once 'vendor/autoload.php';
 
-// Gateway::$registerAddress = '127.0.0.1:14301';
+Gateway::$registerAddress = '127.0.0.1:14301';
 
 // 反转arg
 $argv = array_reverse($argv);
