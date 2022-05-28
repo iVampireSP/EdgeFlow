@@ -40,6 +40,7 @@ var connected = false
 var client_id = null
 let save_count = 0
 let syncMoney = config.syncMoney ?? false
+let alert_msg = null
 
 if (syncMoney) {
   log('警告：经济同步已启用，这是一个实验性的功能，可能会造成意想不到的后果。')
@@ -82,12 +83,13 @@ function connect() {
     log('正在尝试登录...')
 
     asyncEvent('login', config.key, (value) => {
-      log(value)
+      //   log(value)
       if (value == 'failed') {
         log('登录失败，请检查您的配置文件。')
         connected = false
       } else {
-        client_id = value
+        client_id = value.client_id
+        alert_msg = value.server.alert
 
         asyncEvent(
           'server_data',
@@ -100,6 +102,9 @@ function connect() {
           () => {
             connected = true
             log('登录成功')
+            if (alert_msg) {
+              log(alert_msg)
+            }
             mc.setMotd(config.motd)
           }
         )
@@ -293,6 +298,10 @@ mc.listen('onPreJoin', (player) => {
 })
 
 mc.listen('onJoin', (player) => {
+  if (player.isOP() && alert_msg) {
+    player.tell(alert_msg)
+  }
+
   send('broadcast_event', {
     msg: player.name + ' 加入了游戏',
     config: config,

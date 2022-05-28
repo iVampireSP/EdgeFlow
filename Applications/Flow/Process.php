@@ -44,7 +44,7 @@ class Process
             $this->updateSession('token', $data);
             $this->updateSession('server', $server);
 
-            return $this->client_id;
+            return ['client_id' => $this->client_id, 'server' => $server];
         } else {
             $this->log('登录失败');
         }
