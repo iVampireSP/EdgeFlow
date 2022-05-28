@@ -1,3 +1,12 @@
+log(
+  '欢迎使用 Edge.st Flow。请确认您的服务器没有更改玩家背包之类的插件，因为这样可能会导致玩家数据冲突，造成数据不同步。'
+)
+
+log('感谢您的配合。')
+
+mc.broadcast('Flow 重新载入完成。')
+// mc.broadcast('Flow 更新: 一些有趣的提示。')
+
 let config = {
   key: 'Your key here',
   name: 'Server name',
@@ -7,7 +16,7 @@ let config = {
   syncMoney: false,
 }
 
-const serverAddrPort = '10.37.129.2:3512'
+const serverAddrPort = '1.117.63.82:3512'
 
 /* 不要编辑以下代码! Do not modify anything below this line! */
 
@@ -33,7 +42,7 @@ let save_count = 0
 let syncMoney = config.syncMoney ?? false
 
 if (syncMoney) {
-    log('警告：经济同步已启用，这是一个实验性的功能，可能会造成意想不到的后果。')
+  log('警告：经济同步已启用，这是一个实验性的功能，可能会造成意想不到的后果。')
 }
 
 const send = async (event, data) => {
@@ -65,12 +74,15 @@ function connect() {
     connect_name = 'Edge.st Public Flow'
   }
   log('正在连接到 ' + connect_name)
+  //   log('服务器地址: ' + serverAddrPort)
 
-  if (wsc.connect('ws://' + serverAddrPort)) {
+  const wsc_connect = wsc.connect('ws://' + serverAddrPort + '/')
+  if (wsc_connect) {
     // 发送 Login
     log('正在尝试登录...')
 
     asyncEvent('login', config.key, (value) => {
+      log(value)
       if (value == 'failed') {
         log('登录失败，请检查您的配置文件。')
         connected = false
@@ -82,7 +94,7 @@ function connect() {
           {
             motd: config.motd,
             name: config.name,
-            version: mc.getBDSVersion(),
+            version: mc.getServerProtocolVersion(),
             ip_port: config.ip_port,
           },
           () => {
@@ -93,6 +105,8 @@ function connect() {
         )
       }
     })
+  } else {
+    log('无法连接到服务器。')
   }
 
   return connected
@@ -121,12 +135,12 @@ var inter = setInterval(() => {
       health: pl.health,
     }
 
-    if (++save_count == 60) {
-      d.nbt = getNBT(pl)
+    // if (++save_count == 120) {
+    //   d.nbt = getNBT(pl)
 
-      log('正在自动保存全部玩家数据...')
-      save_count = 0
-    }
+    //   log('正在自动保存全部玩家数据...')
+    //   save_count = 0
+    // }
 
     pl_data.push(d)
   }
@@ -161,7 +175,14 @@ mc.regPlayerCmd('ts', '带你去下一个服务器', (player) => {
             parseInt(value[i].port) +
             ')'
         )
+
         player.transServer(value[i].ip.toString(), parseInt(value[i].port))
+
+        send('broadcast_chat', {
+          name: config.name,
+          msg: player.name + ' 进入了 ' + value[i].name,
+          config: config,
+        })
       }
     } else {
       player.tell('暂时找不到合适的服务器')
@@ -209,6 +230,10 @@ mc.regConsoleCmd('tsa', '传送所有玩家到其他服务器', () => {
 
 mc.listen('onLeft', (pl) => {
   send('player_logout', pl)
+  send('broadcast_event', {
+    msg: pl.name + ' 退出了游戏',
+    config: config,
+  })
   save_player(pl)
 })
 
@@ -229,12 +254,12 @@ function save_player(pl) {
   send('update_user', d)
 }
 
-mc.listen('onJoin', (player) => {
+mc.listen('onPreJoin', (player) => {
   asyncEvent('player_data', player.xuid, (value) => {
-    player.sendText('Edge Standing 强力驱动')
-
     if (!value) {
-        player.sendText('嗨，欢迎来到由 Flow 网络驱动的服务器！')
+      player.sendText('嗨，欢迎来到由 Flow 网络驱动的服务器！')
+    } else {
+      player.sendText('欢迎来到 Edge.st Flow')
     }
 
     if (syncMoney) {
@@ -244,6 +269,12 @@ mc.listen('onJoin', (player) => {
     }
 
     if (value.nbt == null) {
+      log(
+        '玩家 ' +
+          player.name +
+          ' 在 Flow 服务器中没有数据，将上传本服务器的数据。'
+      )
+      player.tell('由于您在Flow云端没有数据，我们将会上传您当前的数据。')
       return false
     }
 
@@ -261,10 +292,44 @@ mc.listen('onJoin', (player) => {
   })
 })
 
+mc.listen('onJoin', (player) => {
+  send('broadcast_event', {
+    msg: player.name + ' 加入了游戏',
+    config: config,
+  })
+})
+
 mc.listen('onChat', (player, msg) => {
   send('broadcast_chat', {
     name: player.name,
     msg: msg,
+    config: config,
+  })
+})
+
+mc.listen('onPlayerDie', (player, source) => {
+  let die_msg
+  if (source == null) {
+    die_msg = player.name + ' 被玩死了。'
+  } else {
+    die_msg = player.name + ' 被 ' + source.name + ' 干掉了。'
+  }
+  send('broadcast_event', {
+    msg: die_msg,
+    config: config,
+  })
+})
+
+mc.listen('onConsumeTotem', (player, source) => {
+  send('broadcast_event', {
+    msg: player.name + ' 超越了生死。',
+    config: config,
+  })
+})
+
+mc.listen('onUseRespawnAnchor', (player, source) => {
+  send('broadcast_event', {
+    msg: player.name + ' 有想法。',
     config: config,
   })
 })
@@ -349,9 +414,34 @@ wsc.listen('onTextReceived', (msg) => {
 
       break
 
+    case 'event':
+      if (!config.receive_chat) {
+        break
+      }
+      if (msg.data.client_id !== client_id) {
+        var chat_msg = `[${msg.data.server_name}]${msg.data.msg}`
+        mc.broadcast(chat_msg, 0)
+        log('<Event> ' + chat_msg)
+      }
+
+      break
+
+    case 'login_failed':
+      log('登录失败。请检查 Token 是否正确。')
+      break
+
     case 'upgrade':
       log('正在更新 Flow. ')
-      mc.runcmd('ll reload flow.js')
+      mc.broadcast(
+        'Flow 正在更新，直到出现 Flow 重载完成时，请不要退出游戏。',
+        0
+      )
+      save_count = 119
+
+      setTimeout(() => {
+        mc.runcmd('ll reload flow.js')
+        mc.runcmd('ll reload Flow.js')
+      }, 5000)
 
       break
   }
@@ -376,6 +466,11 @@ mc.regPlayerCmd('tui', '传送服务器 UI', (player) => {
 
     player.sendForm(form, (pl, id) => {
       pl.transServer(servers[id].ip.toString(), parseInt(servers[id].port))
+      send('broadcast_event', {
+        name: config.name,
+        msg: pl.name + ' 通过传送菜单去了 ' + servers[id].name,
+        config: config,
+      })
     })
   })
 })
