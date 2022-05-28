@@ -126,6 +126,21 @@ class Process
         return true;
     }
 
+    public function broadcast_event($data)
+    {
+        $this->log('广播事件: ' . $data->name . "[{$data->config->name}]:" . $data->msg);
+        Gateway::sendToAll(json_encode([
+            'event' => 'event',
+            'data' => [
+                'msg' => $data->msg,
+                'server_name' => $data->config->name,
+                'client_id' => $this->client_id
+            ],
+        ]));
+
+        return true;
+    }
+
     public function get_random_servers()
     {
         return $this->getServers(5);
