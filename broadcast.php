@@ -6,9 +6,12 @@ require_once 'vendor/autoload.php';
 
 Gateway::$registerAddress = '127.0.0.1:14301';
 
-array_pop($argv);
+
 
 foreach ($argv as $arg) {
+    if ($arg == 'broadcast.php') {
+        continue;
+    }
 
     Gateway::sendToAll(json_encode([
         'event' => 'event',
