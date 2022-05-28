@@ -17,6 +17,6 @@ class Setting extends Model
 
     public static function get($key)
     {
-        return Setting::where('key', $key)->first();
+        return Setting::where('key', $key)->first()->value;
     }
 }

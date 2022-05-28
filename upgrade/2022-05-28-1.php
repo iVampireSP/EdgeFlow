@@ -14,4 +14,4 @@ Manager::schema()->create('settings', function ($table) {
 
 Setting::set('health', 'ok');
 
-echo 'test:' . Setting::get('health')->value . PHP_EOL;
+echo 'test:' . Setting::get('health') . PHP_EOL;
