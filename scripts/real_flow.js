@@ -169,38 +169,68 @@ wsc.listen('onError', function () {
   }, 5000)
 })
 
-mc.regPlayerCmd('ts', '带你去下一个服务器', (player) => {
-  asyncEvent('next', { xuid: player.xuid }, (value) => {
-    if (value) {
-      for (var i in value) {
-        log(
-          '已将' +
-            player.name +
-            '传送到' +
-            value[i].name +
-            '(' +
-            value[i].ip.toString() +
-            ':' +
-            parseInt(value[i].port) +
-            ')'
-        )
+mc.regPlayerCmd(
+  'ts',
+  '带你去下一个服务器，如果要加入指定服务器，请在命令后面加上目标服务器ID',
+  (player, args) => {
+    // 检测 args[0] 是否存在
+    if (args[0] === undefined) {
+      asyncEvent('next', { xuid: player.xuid }, (value) => {
+        if (value) {
+          for (var i in value) {
+            log(
+              '已将' +
+                player.name +
+                '传送到' +
+                value[i].name +
+                '(' +
+                value[i].ip.toString() +
+                ':' +
+                parseInt(value[i].port) +
+                ')'
+            )
 
-        player.transServer(value[i].ip.toString(), parseInt(value[i].port))
+            player.transServer(value[i].ip.toString(), parseInt(value[i].port))
 
-        send('broadcast_chat', {
-          name: config.name,
-          msg: player.name + ' 进入了 ' + value[i].name,
-          config: config,
-        })
-      }
+            send('broadcast_event', {
+              name: config.name,
+              msg: player.name + ' 进入了 ' + value[i].name,
+              config: config,
+            })
+          }
+        } else {
+          player.tell('暂时找不到合适的服务器')
+          log(
+            '暂时找不到合适的服务器，可能是服务器池中没有与您BDS版本匹配的服务器。请尝试更新BDS。'
+          )
+        }
+      })
     } else {
-      player.tell('暂时找不到合适的服务器')
-      log(
-        '暂时找不到合适的服务器，可能是服务器池中没有与您BDS版本匹配的服务器。请尝试更新BDS。'
-      )
+      asyncEvent('getServer', args[0], (value) => {
+        if (!value) {
+          player.tell('没有找到目标服务器。')
+        } else if (value.alert) {
+          player.tell(
+            '暂时不能进入服务器 ' +
+              value.name +
+              '，因为这个服务器还有未处理的警告。'
+          )
+          player.tell(value.name + '的警告内容: ' + value.alert)
+        } else {
+          if (value.status == 'active') {
+            send('broadcast_event', {
+              msg: player.name + ' 直达了 ' + value.name,
+              config: config,
+            })
+            player.transServer(value.ip.toString(), parseInt(value.port))
+          } else {
+            player.tell('服务器 ' + value.name + ' 暂时不可用。')
+          }
+        }
+      })
     }
-  })
-})
+  }
+)
 
 mc.regPlayerCmd('fs', '手动将你的数据上传到 Flow 网络。', (player) => {
   save_player(player)
