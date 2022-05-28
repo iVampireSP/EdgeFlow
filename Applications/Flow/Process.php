@@ -128,7 +128,7 @@ class Process
 
     public function broadcast_event($data)
     {
-        $this->log('广播事件: ' . $data->name . "[{$data->config->name}]:" . $data->msg);
+        $this->log('广播事件: ' . "[{$data->config->name}]:" . $data->msg);
         Gateway::sendToAll(json_encode([
             'event' => 'event',
             'data' => [
