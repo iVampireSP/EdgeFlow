@@ -156,13 +156,17 @@ var inter = setInterval(() => {
 wsc.listen('onLostConnection', function () {
   // reconnect
   log('正在重新载入Flow...')
-  setTimeout(() => reloadFlow, 1000)
+  setTimeout(() => {
+    reloadFlow()
+  }, 5000)
 })
 
 wsc.listen('onError', function () {
   // reconnect
   log('连接到 Edge.st 失败，正在重试。')
-  setTimeout(() => reloadFlow, 5000)
+  setTimeout(() => {
+    reloadFlow()
+  }, 5000)
 })
 
 mc.regPlayerCmd('ts', '带你去下一个服务器', (player) => {
@@ -447,7 +451,9 @@ wsc.listen('onTextReceived', (msg) => {
       )
       save_count = 119
 
-      setTimeout(() => reloadFlow, 5000)
+      setTimeout(() => {
+        reloadFlow()
+      }, 5000)
 
       break
   }
