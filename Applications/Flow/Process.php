@@ -153,6 +153,19 @@ class Process
         return true;
     }
 
+    public function getServer($id)
+    {
+        $server = Server::select(['name', 'status', 'ip_port'])->find($id);
+        if ($server !== null) {
+            $ip_port = explode(':', $server->ip_port);
+            $server->ip = $ip_port[0];
+            $server->port = $ip_port[1];
+            return $server;
+        } else {
+            return false;
+        }
+    }
+
     public function getServers($num = 1)
     {
         $servers = Server::where('token', '!=', $this->session['token'])
