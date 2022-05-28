@@ -158,6 +158,7 @@ class Process
         $server = Server::select(['name', 'status', 'ip_port', 'alert'])->find($id);
         if ($server !== null) {
             $ip_port = explode(':', $server->ip_port);
+            $server->can = 1;
             $server->ip = $ip_port[0];
             $server->port = $ip_port[1];
             return $server;
@@ -170,6 +171,7 @@ class Process
     {
         $servers = Server::where('token', '!=', $this->session['token'])
             ->where('status', 'active')
+            ->where('alert', null)
             ->where('ip_port', '!=', null)
             ->where('version', $this->session['server']->version)
             ->select(['id', 'name', 'ip_port', 'motd', 'version'])
