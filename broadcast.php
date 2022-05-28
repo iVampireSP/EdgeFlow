@@ -4,15 +4,15 @@ use GatewayWorker\Lib\Gateway;
 
 require_once 'vendor/autoload.php';
 
-Gateway::$registerAddress = '127.0.0.1:14301';
+// Gateway::$registerAddress = '127.0.0.1:14301';
 
+// 反转arg
+$argv = array_reverse($argv);
 
+// 删除argv最后一个
+array_pop($argv);
 
 foreach ($argv as $arg) {
-    if ($arg == 'broadcast.php') {
-        continue;
-    }
-
     Gateway::sendToAll(json_encode([
         'event' => 'event',
         'data' => [
