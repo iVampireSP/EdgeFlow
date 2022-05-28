@@ -1,9 +1,11 @@
 <?php
 
-use GatewayWorker\Lib\Gateway;
 use Workerman\Redis\Client;
-use Illuminate\Database\Capsule\Manager;
+use GatewayWorker\Lib\Gateway;
+use Applications\Models\Setting;
 use Workerman\Connection\TcpConnection;
+use Illuminate\Database\Capsule\Manager;
+use Workerman\Lib\Timer;
 
 $config = json_decode(file_get_contents('config.json'));
 
@@ -29,6 +31,8 @@ $capsule->bootEloquent();
 
 Events::$db = $capsule;
 Events::$debug = $config->debug ?? false;
+
+Events::$health = Setting::get('health');
 
 // $redis = new Client('redis://127.0.0.1:6379');
 

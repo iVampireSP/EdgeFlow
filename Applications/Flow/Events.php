@@ -36,7 +36,7 @@ class Events
     public static $db = null;
     public static $debug = false;
     public static $redis = null;
-
+    public static $health = 'ng';
 
     public static function onConnect($client_id)
     {
