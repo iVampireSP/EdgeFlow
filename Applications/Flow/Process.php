@@ -217,7 +217,7 @@ class Process
         if ($player->money == 0) {
             $player->money = $data->origin;
         } else {
-            if ($data->value < 0) {
+            if ($player->money - $data->value < 0) {
                 $player->money += $data->value;
             } else {
                 $player->money -= $data->value;
