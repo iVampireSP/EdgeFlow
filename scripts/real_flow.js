@@ -16,7 +16,7 @@ let config = {
   syncMoney: false,
 }
 
-const serverAddrPort = '1.117.63.82:3512'
+const serverAddrPort = '123.456.789.123:3512'
 
 /* 不要编辑以下代码! Do not modify anything below this line! */
 
