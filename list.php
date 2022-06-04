@@ -6,7 +6,7 @@ use Applications\Models\Server;
 
 $servers  = Server::all();
 
-echo "ID \t Name \t Addr \t Status";
+echo "ID \t Name \t Addr \t Status" . PHP_EOL;
 
 foreach ($servers as $server) {
     echo "#{$server->id} \t {$server->name} \t {$server->ip_port} \t {$server->status}" . PHP_EOL;
