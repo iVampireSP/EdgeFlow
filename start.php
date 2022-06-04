@@ -5,7 +5,14 @@
  * php start.php start
  */
 
-ini_set('display_errors', 'on');
+$config = json_decode(file_get_contents('config.json'));
+if ($config->debug ?? false) {
+    ini_set('display_errors', 'on');
+    error_reporting(E_ALL);
+} else {
+    ini_set('display_errors', 'off');
+    error_reporting(0);
+}
 
 use Workerman\Worker;
 
