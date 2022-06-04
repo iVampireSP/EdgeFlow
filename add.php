@@ -19,6 +19,7 @@ $random_string = bin2hex(random_bytes(16));
 $server = new Server();
 $server->ip_port = $ip_port;
 $server->token = $random_string;
+$server->status = 'offline';
 $server->save();
 
 
