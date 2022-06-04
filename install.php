@@ -22,6 +22,16 @@ try {
 } catch (Exception $e) {
     echo 'Database init failed!' . PHP_EOL;
     echo $e->getMessage() . PHP_EOL;
+    echo 'Do you want to reinstall?(yes/no)' . PHP_EOL;
+    $handle = read();
+    if ($handle == 'yes') {
+        echo 'Dropping database...' . PHP_EOL;
+        Manager::schema()->dropIfExists('players');
+        Manager::schema()->dropIfExists('servers');
+        Manager::schema()->dropIfExists('messages');
+        Manager::schema()->dropIfExists('settings');
+    }
+
     exit;
 }
 
@@ -82,3 +92,12 @@ echo 'test:' . Setting::get('health') . PHP_EOL;
 
 
 echo 'Install succeeded!' . PHP_EOL;
+
+function read()
+{
+    $fp = fopen('php://stdin', 'r');
+    $input = fgets($fp, 255);
+    fclose($fp);
+    $input = trim($input);
+    return $input;
+}
