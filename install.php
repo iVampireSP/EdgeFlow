@@ -5,6 +5,15 @@ require_once 'database.php';
 use Applications\Models\Setting;
 use Illuminate\Database\Capsule\Manager;
 
+
+echo 'Install script will drop all tables! You can press ^C to cancel in 5s.' . PHP_EOL;
+sleep(5);
+echo 'Dropping database...' . PHP_EOL;
+Manager::schema()->dropIfExists('players');
+Manager::schema()->dropIfExists('servers');
+Manager::schema()->dropIfExists('messages');
+Manager::schema()->dropIfExists('settings');
+
 try {
     Manager::schema()->create('players', function ($table) {
         $table->id();
@@ -21,17 +30,6 @@ try {
     });
 } catch (Exception $e) {
     echo 'Database init failed!' . PHP_EOL;
-    echo $e->getMessage() . PHP_EOL;
-    echo 'Do you want to reinstall?(yes/no)' . PHP_EOL;
-    $handle = read();
-    if ($handle == 'yes') {
-        echo 'Dropping database...' . PHP_EOL;
-        Manager::schema()->dropIfExists('players');
-        Manager::schema()->dropIfExists('servers');
-        Manager::schema()->dropIfExists('messages');
-        Manager::schema()->dropIfExists('settings');
-    }
-
     exit;
 }
 
