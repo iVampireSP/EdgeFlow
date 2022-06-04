@@ -13,7 +13,7 @@ $capsule = new Manager;
 // 创建链接
 $capsule->addConnection([
     'driver' => 'mysql',
-    'host' => 'localhost',
+    'host' => $config->database->host,
     'database' => $config->database->db_name,
     'username' => $config->database->user,
     'password' => $config->database->password,
@@ -32,7 +32,12 @@ $capsule->bootEloquent();
 Events::$db = $capsule;
 Events::$debug = $config->debug ?? false;
 
-Events::$health = Setting::get('health');
+try {
+    Events::$health = Setting::get('health');
+} catch (Exception $e) {
+    echo 'Unable get health status, trying install.' . PHP_EOL;
+    require_once 'install.php';
+}
 
 // $redis = new Client('redis://127.0.0.1:6379');
 
