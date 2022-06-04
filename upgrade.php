@@ -10,4 +10,4 @@ Gateway::sendToAll(json_encode([
     'event' => 'upgrade',
 ]));
 
-echo 'Broadcast upgrade event success.';
+echo 'Broadcast upgrade event success.' . PHP_EOL;

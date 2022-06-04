@@ -23,4 +23,4 @@ foreach ($argv as $arg) {
     ]));
 }
 
-echo 'Broadcast event success.';
+echo 'Broadcast event success.' . PHP_EOL;
