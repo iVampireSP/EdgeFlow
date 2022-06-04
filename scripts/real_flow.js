@@ -12,6 +12,7 @@ let config = {
   name: 'Server name',
   motd: 'Server Motd',
   ip_port: '123.456.789.1:19132',
+  group: null,
   receive_chat: true,
   syncMoney: false,
 }
@@ -98,6 +99,7 @@ function connect() {
             name: config.name,
             version: mc.getServerProtocolVersion(),
             ip_port: config.ip_port,
+            group: config.group,
           },
           () => {
             connected = true

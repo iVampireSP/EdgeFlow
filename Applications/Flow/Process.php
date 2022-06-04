@@ -58,6 +58,7 @@ class Process
             'name' => $data->name,
             'motd' => $data->motd,
             'version' => $data->version,
+            'group' => $data->group,
         ]);
 
         return true;
@@ -169,12 +170,20 @@ class Process
 
     public function getServers($num = 1)
     {
-        $servers = Server::where('token', '!=', $this->session['token'])
+        $server_query = Server::where('token', '!=', $this->session['token']);
+        $group = $server_query->first()->group;
+
+        $servers = $server_query
             ->where('status', 'active')
             ->where('alert', null)
             ->where('ip_port', '!=', null)
-            ->where('version', $this->session['server']->version)
-            ->select(['id', 'name', 'ip_port', 'motd', 'version'])
+            ->where('version', $this->session['server']->version);
+
+        if ($group !== null) {
+            $servers = $servers->where('group', $group);
+        }
+
+        $servers->select(['id', 'name', 'ip_port', 'motd', 'version'])
             ->inRandomOrder()
             ->take($num)
             ->get();
