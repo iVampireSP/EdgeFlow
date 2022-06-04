@@ -23,4 +23,6 @@ $server->ip_port = $ip_port;
 $server->token = $random_string;
 $server->save();
 
+
+echo 'Token: ' . $server->token . PHP_EOL;
 echo 'Server added!' . PHP_EOL;
