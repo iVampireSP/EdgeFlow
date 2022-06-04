@@ -36,6 +36,7 @@ try {
     Events::$health = Setting::get('health');
 } catch (Exception $e) {
     echo 'Unable get health status, trying install.' . PHP_EOL;
+    echo $e->getMessage() . PHP_EOL;
     require_once 'install.php';
 }
 

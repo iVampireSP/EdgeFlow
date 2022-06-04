@@ -20,7 +20,8 @@ try {
         $table->timestamps();
     });
 } catch (Exception $e) {
-    echo 'Database init failed!';
+    echo 'Database init failed!' . PHP_EOL;
+    echo $e->getMessage() . PHP_EOL;
     exit;
 }
 
