@@ -1,5 +1,6 @@
 {
     "debug": false,
+    "address": "0.0.0.0:3512",
     "database": {
         "host": "localhost",
         "db_name": "flow",

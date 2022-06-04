@@ -19,9 +19,16 @@ use \Workerman\Autoloader;
 
 // 自动加载类
 require_once __DIR__ . '/../../vendor/autoload.php';
+$config = json_decode(file_get_contents(__DIR__ . '/../../config.json'));
+
+if (isset($config->address)) {
+    $address = $config->address;
+} else {
+    $address = '0.0.0.0:3512';
+}
 
 // gateway 进程，这里使用Text协议，可以用telnet测试
-$gateway = new Gateway("websocket://0.0.0.0:3512");
+$gateway = new Gateway("websocket://" . $address);
 // gateway名称，status方便查看
 $gateway->name = 'EdgeFlowGateway';
 // gateway进程数
