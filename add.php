@@ -3,8 +3,6 @@
 require_once 'database.php';
 
 use Applications\Models\Server;
-use Illuminate\Database\Capsule\Manager;
-
 
 echo 'Please input server address and port like 1.2.3.4:19132' . PHP_EOL;
 $ip_port = read();
