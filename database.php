@@ -10,7 +10,7 @@ $capsule = new Manager;
 // 创建链接
 $capsule->addConnection([
     'driver' => 'mysql',
-    'host' => 'localhost',
+    'host' => $config->database->host,
     'database' => $config->database->db_name,
     'username' => $config->database->user,
     'password' => $config->database->password,
