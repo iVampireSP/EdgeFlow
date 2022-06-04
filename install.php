@@ -92,12 +92,3 @@ echo 'test:' . Setting::get('health') . PHP_EOL;
 
 
 echo 'Install succeeded!' . PHP_EOL;
-
-function read()
-{
-    $fp = fopen('php://stdin', 'r');
-    $input = fgets($fp, 255);
-    fclose($fp);
-    $input = trim($input);
-    return $input;
-}

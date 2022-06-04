@@ -22,3 +22,12 @@ $capsule->addConnection([
 
 $capsule->setAsGlobal();
 $capsule->bootEloquent();
+
+function read()
+{
+    $fp = fopen('php://stdin', 'r');
+    $input = fgets($fp, 255);
+    fclose($fp);
+    $input = trim($input);
+    return $input;
+}
