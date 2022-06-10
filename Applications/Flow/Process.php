@@ -67,7 +67,7 @@ class Process
         ]);
 
         if ($data->group != 'public') {
-            $this->log('服务器: ', $data->name, ' 已加入组: ' . $data->group);
+            $this->log('服务器: ' . $data->name . ' 已加入组: ' . $data->group);
         }
 
         Gateway::joinGroup($this->client_id, $data->group);
