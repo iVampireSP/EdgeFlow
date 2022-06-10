@@ -315,7 +315,7 @@ mc.listen('onPreJoin', (player) => {
           player.name +
           ' 在 Flow 服务器中没有数据，将上传本服务器的数据。'
       )
-      player.tell('由于您在Flow云端没有数据，我们将会上传您当前的数据。')
+      player.tell('由于您在 Flow 云端没有数据，我们将会上传您当前的数据。')
       return false
     }
 
@@ -323,9 +323,9 @@ mc.listen('onPreJoin', (player) => {
     let readNBT = NBT.parseSNBT(value.nbt)
     let nbt = player.getNbt()
 
-    nbt.setTag('Offhand', readNBT.getTag('OffHand'))
-    nbt.setTag('Inventory', readNBT.getTag('Inventory'))
-    nbt.setTag('Armor', readNBT.getTag('Armor'))
+    // nbt.setTag('Offhand', readNBT.getTag('OffHand'))
+    // nbt.setTag('Inventory', readNBT.getTag('Inventory'))
+    // nbt.setTag('Armor', readNBT.getTag('Armor'))
     nbt.setTag('EnderChestInventory', readNBT.getTag('EnderChest'))
 
     player.setNbt(nbt)
@@ -532,9 +532,9 @@ function asyncEvent(event, data, callback) {
 function getNBT(pl) {
   let nbt = pl.getNbt()
   let saveNBT = NBT.createTag(NBT.Compound)
-  saveNBT.setTag('OffHand', nbt.getTag('Offhand'))
-  saveNBT.setTag('Inventory', nbt.getTag('Inventory'))
-  saveNBT.setTag('Armor', nbt.getTag('Armor'))
+//   saveNBT.setTag('OffHand', nbt.getTag('Offhand'))
+//   saveNBT.setTag('Inventory', nbt.getTag('Inventory'))
+//   saveNBT.setTag('Armor', nbt.getTag('Armor'))
   saveNBT.setTag('EnderChest', nbt.getTag('EnderChestInventory'))
 
   return saveNBT.toSNBT()
