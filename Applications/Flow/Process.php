@@ -73,7 +73,6 @@ class Process
         Gateway::joinGroup($this->client_id, $data->group);
         $this->updateSession('group', $data->group);
 
-
         return true;
     }
 
@@ -207,7 +206,7 @@ class Process
     public function getServers($num = 1)
     {
         $server_query = Server::where('token', '!=', $this->session['token']);
-        $group = $server_query->first()->group;
+        $this_server = $server_query->first();
 
         $servers = $server_query
             ->where('status', 'active')
@@ -215,11 +214,10 @@ class Process
             ->where('ip_port', '!=', null)
             ->where('version', $this->session['server']->version);
 
-        if ($group !== null) {
-            $servers = $servers->where('group', $group);
-        }
+        $servers = $servers->where('group', $this_server->group);
 
-        $servers->select(['id', 'name', 'ip_port', 'motd', 'version'])
+
+        $servers = $servers->select(['id', 'name', 'ip_port', 'motd', 'version'])
             ->inRandomOrder()
             ->take($num)
             ->get();
@@ -228,16 +226,21 @@ class Process
             return false;
         }
 
-
-        // $this->log('num:' . $num);
+        $output = [];
 
         foreach ($servers as $server) {
             $ip_port = explode(':', $server->ip_port);
-            $server->ip = $ip_port[0];
-            $server->port = $ip_port[1];
+            $output[] = [
+                'id' => $server->id,
+                'name' => $server->name,
+                'ip' => $ip_port[0],
+                'port' => $ip_port[1],
+                'motd' => $server->motd,
+                'version' => $server->version,
+            ];
         }
 
-        return $servers;
+        return $output;
     }
 
     public function money_add($data)
