@@ -12,7 +12,7 @@ let config = {
   name: 'Server name',
   motd: 'Server Motd',
   ip_port: '123.456.789.1:19132',
-  group: null,
+  group: 'public',
   receive_chat: true,
   syncMoney: false,
 }
@@ -177,7 +177,7 @@ mc.regPlayerCmd(
   (player, args) => {
     // 检测 args[0] 是否存在
     if (args[0] === undefined) {
-      asyncEvent('next', { xuid: player.xuid }, (value) => {
+      asyncEvent('next', { xuid: player.xuid, name: player.name }, (value) => {
         if (value) {
           for (var i in value) {
             log(
@@ -338,6 +338,8 @@ mc.listen('onJoin', (player) => {
     player.tell(alert_msg)
   }
 
+  send('player_join', player.name)
+
   send('broadcast_event', {
     msg: player.name + ' 加入了游戏',
     config: config,
@@ -475,6 +477,21 @@ wsc.listen('onTextReceived', (msg) => {
       log('登录失败。请检查 Token 是否正确。')
       break
 
+    case 'player_chooseing':
+      //   get player
+      (function (player) {
+        const pl = player.getPlayer(player)
+        if (pl != null) {
+          setTimeout(() => {
+            pl.rename('[选择中...]' + pl.name)
+            setTimeout(() => {
+              pl.rename(player)
+            }, 1000)
+          }, 1000)
+        }
+      })(msg.data.msg)
+      break
+
     case 'upgrade':
       log('正在更新 Flow. ')
       mc.broadcast(
@@ -532,9 +549,9 @@ function asyncEvent(event, data, callback) {
 function getNBT(pl) {
   let nbt = pl.getNbt()
   let saveNBT = NBT.createTag(NBT.Compound)
-//   saveNBT.setTag('OffHand', nbt.getTag('Offhand'))
-//   saveNBT.setTag('Inventory', nbt.getTag('Inventory'))
-//   saveNBT.setTag('Armor', nbt.getTag('Armor'))
+  //   saveNBT.setTag('OffHand', nbt.getTag('Offhand'))
+  //   saveNBT.setTag('Inventory', nbt.getTag('Inventory'))
+  //   saveNBT.setTag('Armor', nbt.getTag('Armor'))
   saveNBT.setTag('EnderChest', nbt.getTag('EnderChestInventory'))
 
   return saveNBT.toSNBT()

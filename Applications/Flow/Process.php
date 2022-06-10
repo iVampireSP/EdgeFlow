@@ -27,7 +27,7 @@ class Process
 
     public function login($data)
     {
-        $this->log('正在验证登录...');
+        $this->log('有一台服务器正在请求连接到 Flow 网络...');
 
         $server = Server::current($data)->first();
         // $server = self::$db->table('servers')->where('token', $data)->first();
@@ -44,6 +44,10 @@ class Process
             $this->updateSession('token', $data);
             $this->updateSession('server', $server);
 
+            Events::$online++;
+            $this->log('当前在线服务器数量: ' . Events::$online);
+
+
             return ['client_id' => $this->client_id, 'server' => $server];
         } else {
             $this->log('登录失败');
@@ -54,12 +58,21 @@ class Process
 
     public function server_data($data)
     {
+        $data->group = $data->group ?? 'public';
         Server::current($this->session['token'])->update([
             'name' => $data->name,
             'motd' => $data->motd,
             'version' => $data->version,
             'group' => $data->group,
         ]);
+
+        if ($data->group != 'public') {
+            $this->log('服务器: ', $data->name, ' 已加入组: ' . $data->group);
+        }
+
+        Gateway::joinGroup($this->client_id, $data->group);
+        $this->updateSession('group', $data->group);
+
 
         return true;
     }
@@ -91,14 +104,22 @@ class Process
         return true;
     }
 
-    public function next()
+    public function next($xuid, $name)
     {
+        $this->flow_event('player_chooseing', $name);
         return $this->getServers(1);
     }
 
     public function nextAll()
     {
         return $this->getServers(1);
+    }
+
+    public function player_join($name)
+    {
+        Events::$online_players++;
+        $this->log('玩家: ' . $name . ' 加入了游戏。');
+        $this->log('在线玩家数量: ' . Events::$online_players);
     }
 
     public function player_data($xuid)
@@ -113,8 +134,8 @@ class Process
 
     public function broadcast_chat($data)
     {
-        $this->log('广播聊天: ' . $data->name . "[{$data->config->name}]说:" . $data->msg);
-        Gateway::sendToAll(json_encode([
+        $this->log('[' . $this->session['group'] . ']' . '广播聊天: ' . $data->name . "[{$data->config->name}]说:" . $data->msg);
+        Gateway::sendToGroup($this->session['group'], json_encode([
             'event' => 'chat',
             'data' => [
                 'name' => $data->name,
@@ -142,6 +163,19 @@ class Process
         return true;
     }
 
+    public function flow_event($name, $msg)
+    {
+        $this->log('Flow 事件: ' . "{$name}:" . $msg);
+        Gateway::sendToAll(json_encode([
+            'event' => $name,
+            'data' => [
+                'msg' => $msg,
+                'server_name' => 'Flow',
+                'client_id' => 0
+            ],
+        ]));
+    }
+
     public function get_random_servers()
     {
         return $this->getServers(5);
@@ -149,8 +183,10 @@ class Process
 
     public function player_logout($player)
     {
-        // var_dump($player);
-        // $this->log('玩家退出' . $player->name . '于服务器 ' . $player->config->name);
+        $this->log('玩家: ' . $player->name . ' 离开了服务器');
+        Events::$online_players--;
+        $this->log('在线玩家数量玩家: ' . Events::$online_players);
+
         return true;
     }
 
@@ -203,6 +239,7 @@ class Process
 
         return $servers;
     }
+
     public function money_add($data)
     {
         $player = Player::xuid($data->xuid)->first();
@@ -218,6 +255,11 @@ class Process
             'status' => true,
             'value' => $player->money,
         ];
+    }
+
+    public function getOnline()
+    {
+        return ['servers' => Events::$online, 'players' => Events::$online_players];
     }
 
     public function money_reduce($data)

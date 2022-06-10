@@ -37,6 +37,8 @@ class Events
     public static $debug = false;
     public static $redis = null;
     public static $health = 'ng';
+    public static $online = 0;
+    public static $online_players = 0;
 
     public static function onConnect($client_id)
     {
@@ -139,6 +141,7 @@ class Events
     {
         $server = Server::where('client_id', $client_id)->first();
 
+        self::$online--;
         if (is_null($server)) {
             echo '有一台服务器已经关闭。' . $client_id . PHP_EOL;
         } else {
@@ -148,6 +151,8 @@ class Events
 
             echo '服务器离线: ' . $server->name . PHP_EOL;
         }
+
+        echo '在线服务器数量: ' . self::$online . PHP_EOL;
 
 
         // 向所有人发送 
