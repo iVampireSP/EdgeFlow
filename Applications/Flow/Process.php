@@ -104,9 +104,9 @@ class Process
         return true;
     }
 
-    public function next($xuid, $name)
+    public function next()
     {
-        $this->flow_event('player_chooseing', $name);
+        $this->flow_event('player_chooseing', $this->msg->name);
         return $this->getServers(1);
     }
 
@@ -224,7 +224,7 @@ class Process
             ->take($num)
             ->get();
 
-        if (count($servers) === 0) {
+        if (!$servers->count()) {
             return false;
         }
 

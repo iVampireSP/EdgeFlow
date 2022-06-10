@@ -479,17 +479,20 @@ wsc.listen('onTextReceived', (msg) => {
 
     case 'player_chooseing':
       //   get player
-      (function (player) {
-        const pl = player.getPlayer(player)
+      ;(function () {
+        const origin_name = msg.data.msg
+        log(origin_name + ' 选择中...')
+        mc.broadcast(origin_name + ' 选择中...', 0)
+        const pl = mc.getPlayer(origin_name)
         if (pl != null) {
           setTimeout(() => {
             pl.rename('[选择中...]' + pl.name)
             setTimeout(() => {
-              pl.rename(player)
+              pl.rename(origin_name)
             }, 1000)
           }, 1000)
         }
-      })(msg.data.msg)
+      })
       break
 
     case 'upgrade':
