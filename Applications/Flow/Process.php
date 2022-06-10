@@ -212,12 +212,9 @@ class Process
             ->where('status', 'active')
             ->where('alert', null)
             ->where('ip_port', '!=', null)
-            ->where('version', $this->session['server']->version);
-
-        $servers = $servers->where('group', $this_server->group);
-
-
-        $servers = $servers->select(['id', 'name', 'ip_port', 'motd', 'version'])
+            ->where('version', $this->session['server']->version)
+            ->where('group', $this_server->group)
+            ->select(['id', 'name', 'ip_port', 'motd', 'version'])
             ->inRandomOrder()
             ->take($num)
             ->get();
