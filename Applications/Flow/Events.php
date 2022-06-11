@@ -100,6 +100,9 @@ class Events
             $process->log($data);
         }
 
+        // Gateway::updateSession($client_id, $_SESSION);
+
+
         unset($process);
 
         //     case 'player_logout':

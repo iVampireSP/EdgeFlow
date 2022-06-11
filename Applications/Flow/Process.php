@@ -72,6 +72,9 @@ class Process
 
         Gateway::joinGroup($this->client_id, $data->group);
         $this->updateSession('group', $data->group);
+        // Gateway::updateSession($this->client_id, ['group' => $data->group]);
+
+
 
         return true;
     }
@@ -133,7 +136,7 @@ class Process
 
     public function broadcast_chat($data)
     {
-        $this->log('[' . $this->session['group'] . ']' . '广播聊天: ' . $data->name . "[{$data->config->name}]说:" . $data->msg);
+        $this->log('[' . $this->session['group'] . ']广播聊天: ' . $data->name . "[{$data->config->name}]说:" . $data->msg);
         Gateway::sendToGroup($this->session['group'], json_encode([
             'event' => 'chat',
             'data' => [
@@ -149,8 +152,8 @@ class Process
 
     public function broadcast_event($data)
     {
-        $this->log('广播事件: ' . "[{$data->config->name}]:" . $data->msg);
-        Gateway::sendToAll(json_encode([
+        $this->log('[' . $this->session['group'] . ']广播事件: ' . "[{$data->config->name}]:" . $data->msg);
+        Gateway::sendToGroup($this->session['group'], json_encode([
             'event' => 'event',
             'data' => [
                 'msg' => $data->msg,
