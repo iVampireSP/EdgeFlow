@@ -209,7 +209,8 @@ class Process
     public function getServers($num = 1)
     {
         $server_query = Server::where('token', '!=', $this->session['token']);
-        $this_server = $server_query->first();
+
+        $this_server = Server::where('token', $this->session['token'])->first();
 
         $this->log($this_server->name . ':正在搜索 ' . $this_server->group . ' 组的服务器');
 
