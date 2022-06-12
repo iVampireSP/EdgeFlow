@@ -211,6 +211,8 @@ class Process
         $server_query = Server::where('token', '!=', $this->session['token']);
         $this_server = $server_query->first();
 
+        $this->log($this_server->name . ':正在搜索 ' . $this_server->group . ' 组的服务器');
+
         $servers = $server_query
             ->where('status', 'active')
             ->where('alert', null)
