@@ -272,7 +272,7 @@ mc.regConsoleCmd('tsa', '传送所有玩家到其他服务器', () => {
 mc.listen('onLeft', (pl) => {
   send('player_logout', pl)
   send('broadcast_event', {
-    msg: pl.name + ' 退出了游戏',
+    msg: Format.Gold + pl.name + ' 退出了游戏',
     config: config,
   })
   save_player(pl)
@@ -341,7 +341,7 @@ mc.listen('onJoin', (player) => {
   send('player_join', player.name)
 
   send('broadcast_event', {
-    msg: player.name + ' 加入了游戏',
+    msg: Format.Gold + player.name + ' 加入了游戏',
     config: config,
   })
 })
