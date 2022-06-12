@@ -298,9 +298,9 @@ function save_player(pl) {
 mc.listen('onPreJoin', (player) => {
   asyncEvent('player_data', player.xuid, (value) => {
     if (!value) {
-      player.sendText('嗨，欢迎来到由 Flow 网络驱动的服务器！')
+      player.sendText('嗨，欢迎来到由 Edge.st Flow 网络驱动的服务器！')
     } else {
-      player.sendText('欢迎来到 Edge.st Flow')
+      player.sendText('本服务器支持 Flow Cluster.')
     }
 
     if (syncMoney) {
