@@ -396,7 +396,7 @@ if (syncMoney) {
         }
       }
     )
-    // return true
+    return true
   })
 
   mc.listen('beforeMoneyAdd', (xuid, value) => {
