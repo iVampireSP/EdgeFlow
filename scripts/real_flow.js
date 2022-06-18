@@ -17,7 +17,7 @@ let config = {
   syncMoney: false,
 }
 
-const serverAddrPort = '123.456.789.123:3512'
+const serverAddrPort = '123.456.789.1:3512'
 
 /* 不要编辑以下代码! Do not modify anything below this line! */
 
@@ -43,15 +43,13 @@ let save_count = 0
 let syncMoney = config.syncMoney ?? false
 let alert_msg = null
 
-if (syncMoney) {
-  log('警告：经济同步已启用，这是一个实验性的功能，可能会造成意想不到的后果。')
-}
-
 const send = async (event, data) => {
   let json = JSON.stringify({
     event: event,
     data: data,
   })
+
+//   log(json)
 
   wsc.send(json)
 
@@ -382,22 +380,25 @@ mc.listen('onUseRespawnAnchor', (player, source) => {
 })
 
 if (syncMoney) {
-  mc.listen('beforeMoneySet', (xuid, value) => {
-    asyncEvent(
-      'money_set',
-      { xuid: xuid, value: value, origin: money.get(xuid) },
-      (response) => {
-        if (response.status) {
-          let pl = mc.getPlayer(xuid)
-          pl.tell('[+]您的余额已更新为:' + response.value)
-          log(pl.name + ' 经济增加至: ' + response.value + '，变动: ' + value)
+  log('警告：经济同步已启用，这是一个实验性的功能，可能会造成意想不到的后果。')
 
-          money.set(xuid, response.value)
-        }
-      }
-    )
-    return true
-  })
+//   mc.listen('beforeMoneySet', (xuid, value) => {
+//     asyncEvent(
+//       'money_set',
+//       { xuid: xuid, value: value },
+//       (response) => {
+//         if (response.status) {
+//           log('Money set!')
+//           //   let pl = mc.getPlayer(xuid)
+//           //   pl.tell('[+]您的余额已更新为:' + response.value)
+//           //   log(pl.name + ' 经济增加至: ' + response.value + '，变动: ' + value)
+
+//           //   money.set(xuid, response.value)
+//         }
+//       }
+//     )
+//     // return true
+//   })
 
   mc.listen('beforeMoneyAdd', (xuid, value) => {
     asyncEvent(
