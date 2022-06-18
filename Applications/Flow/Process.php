@@ -254,7 +254,7 @@ class Process
     public function money_set($data)
     {
         $player = Player::xuid($data->xuid)->first();
-        $player->money = $data->money;
+        $player->money = $data->value ?? 0;
         $player->save();
 
         return [
