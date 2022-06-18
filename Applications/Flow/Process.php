@@ -251,22 +251,22 @@ class Process
         return ['servers' => Events::$online, 'players' => Events::$online_players];
     }
 
-    public function money_set($data)
-    {
-        $player = Player::xuid($data->xuid)->first();
-        $player->money = $data->value ?? 0;
-        $player->save();
+    // public function money_set($data)
+    // {
+    //     $player = Player::xuid($data->xuid)->first();
+    //     $player->money = $data->value ?? 0;
+    //     $player->save();
 
-        return [
-            'status' => true,
-            'value' => $player->money,
-        ];
-    }
+    //     return [
+    //         'status' => true,
+    //         'value' => $player->money,
+    //     ];
+    // }
 
     public function money_add($data)
     {
         $player = Player::xuid($data->xuid)->first();
-        if ($player->money == 0) {
+        if ($player->money == 0 || $data->origin == 0) {
             $player->money = $data->origin;
         } else {
             $player->money += $data->value;
