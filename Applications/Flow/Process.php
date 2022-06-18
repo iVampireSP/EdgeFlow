@@ -266,7 +266,10 @@ class Process
     public function money_add($data)
     {
         $player = Player::xuid($data->xuid)->first();
-        if ($player->money == 0 || $data->origin == 0) {
+        if ($data->origin == 0) {
+            $data->origin = 1;
+        }
+        if ($player->money == 0) {
             $player->money = $data->origin;
         } else {
             $player->money += $data->value;
