@@ -390,6 +390,7 @@ if (syncMoney) {
         if (response.status) {
           let pl = mc.getPlayer(xuid)
           pl.tell('[+]您的余额已更新为:' + response.value)
+          log(pl.name + ' 经济增加至: ' + response.value + '，变动: ' + value)
 
           money.set(xuid, response.value)
         }
@@ -406,6 +407,7 @@ if (syncMoney) {
         if (response.status) {
           let pl = mc.getPlayer(xuid)
           pl.tell('[-]您的余额已更新为:' + response.value)
+          log(pl.name + ' 经济减少至: ' + response.value + '，变动:  ' + value)
 
           money.set(xuid, response.value)
         }
