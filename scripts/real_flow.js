@@ -15,6 +15,7 @@ let config = {
   group: 'public',
   receive_chat: true,
   syncMoney: false,
+  syncEndchest: true,
 }
 
 const serverAddrPort = '123.456.789.1:3512'
@@ -41,6 +42,7 @@ var connected = false
 var client_id = null
 let save_count = 0
 let syncMoney = config.syncMoney ?? false
+let syncEndchest = config.syncEndchest ?? true
 let alert_msg = null
 
 const send = async (event, data) => {
@@ -49,7 +51,7 @@ const send = async (event, data) => {
     data: data,
   })
 
-//   log(json)
+  //   log(json)
 
   wsc.send(json)
 
@@ -101,7 +103,7 @@ function connect() {
           },
           () => {
             connected = true
-            log('登录成功')
+            log('登录成功。')
             if (alert_msg) {
               log(alert_msg)
             }
@@ -277,20 +279,22 @@ mc.listen('onLeft', (pl) => {
 })
 
 function save_player(pl) {
-  let d = [
-    {
-      name: pl.name,
-      xuid: pl.xuid,
-      pos: [pl.pos.x, pl.pos.y, pl.pos.z],
-      gameMode: pl.gameMode,
-      maxHealth: pl.maxHealth,
-      health: pl.health,
-      nbt: getNBT(pl),
-      config: config,
-    },
-  ]
+  if (syncEndchest) {
+    let d = [
+      {
+        name: pl.name,
+        xuid: pl.xuid,
+        pos: [pl.pos.x, pl.pos.y, pl.pos.z],
+        gameMode: pl.gameMode,
+        maxHealth: pl.maxHealth,
+        health: pl.health,
+        nbt: getNBT(pl),
+        config: config,
+      },
+    ]
 
-  send('update_user', d)
+    send('update_user', d)
+  }
 }
 
 mc.listen('onPreJoin', (player) => {
@@ -307,33 +311,39 @@ mc.listen('onPreJoin', (player) => {
       }
     }
 
-    if (value.nbt == null) {
-      log(
-        '玩家 ' +
-          player.name +
-          ' 在 Flow 服务器中没有数据，将上传本服务器的数据。'
-      )
-      player.tell('由于您在 Flow 云端没有数据，我们将会上传您当前的数据。')
-      return false
+    if (syncEndchest) {
+      if (value.nbt == null) {
+        log(
+          '玩家 ' +
+            player.name +
+            ' 在 Flow 服务器中没有数据，将上传本服务器的数据。'
+        )
+        player.tell('由于您在 Flow 云端没有数据，我们将会上传您当前的数据。')
+        return false
+      }
+
+      // 写入 NBT
+      let readNBT = NBT.parseSNBT(value.nbt)
+      let nbt = player.getNbt()
+
+      // nbt.setTag('Offhand', readNBT.getTag('OffHand'))
+      // nbt.setTag('Inventory', readNBT.getTag('Inventory'))
+      // nbt.setTag('Armor', readNBT.getTag('Armor'))
+      nbt.setTag('EnderChestInventory', readNBT.getTag('EnderChest'))
+
+      player.setNbt(nbt)
+      player.refreshItems()
     }
-
-    // 写入 NBT
-    let readNBT = NBT.parseSNBT(value.nbt)
-    let nbt = player.getNbt()
-
-    // nbt.setTag('Offhand', readNBT.getTag('OffHand'))
-    // nbt.setTag('Inventory', readNBT.getTag('Inventory'))
-    // nbt.setTag('Armor', readNBT.getTag('Armor'))
-    nbt.setTag('EnderChestInventory', readNBT.getTag('EnderChest'))
-
-    player.setNbt(nbt)
-    player.refreshItems()
   })
 })
 
 mc.listen('onJoin', (player) => {
   if (player.isOP() && alert_msg) {
     player.tell(alert_msg)
+  }
+
+  if (!syncEndchest) {
+    player.tell('这台服务器没有启用 Flow 末影箱同步。')
   }
 
   send('player_join', player.name)
@@ -382,23 +392,23 @@ mc.listen('onUseRespawnAnchor', (player, source) => {
 if (syncMoney) {
   log('警告：经济同步已启用，这是一个实验性的功能，可能会造成意想不到的后果。')
 
-//   mc.listen('beforeMoneySet', (xuid, value) => {
-//     asyncEvent(
-//       'money_set',
-//       { xuid: xuid, value: value },
-//       (response) => {
-//         if (response.status) {
-//           log('Money set!')
-//           //   let pl = mc.getPlayer(xuid)
-//           //   pl.tell('[+]您的余额已更新为:' + response.value)
-//           //   log(pl.name + ' 经济增加至: ' + response.value + '，变动: ' + value)
+  //   mc.listen('beforeMoneySet', (xuid, value) => {
+  //     asyncEvent(
+  //       'money_set',
+  //       { xuid: xuid, value: value },
+  //       (response) => {
+  //         if (response.status) {
+  //           log('Money set!')
+  //           //   let pl = mc.getPlayer(xuid)
+  //           //   pl.tell('[+]您的余额已更新为:' + response.value)
+  //           //   log(pl.name + ' 经济增加至: ' + response.value + '，变动: ' + value)
 
-//           //   money.set(xuid, response.value)
-//         }
-//       }
-//     )
-//     // return true
-//   })
+  //           //   money.set(xuid, response.value)
+  //         }
+  //       }
+  //     )
+  //     // return true
+  //   })
 
   mc.listen('beforeMoneyAdd', (xuid, value) => {
     asyncEvent(
@@ -581,6 +591,6 @@ function getNBT(pl) {
 }
 
 function reloadFlow() {
-  mc.runcmd('ll reload flow.js')
+  //   mc.runcmd('ll reload flow.js')
   mc.runcmd('ll reload Flow.js')
 }
