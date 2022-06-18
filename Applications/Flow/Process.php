@@ -246,6 +246,23 @@ class Process
         return $output;
     }
 
+    public function getOnline()
+    {
+        return ['servers' => Events::$online, 'players' => Events::$online_players];
+    }
+
+    public function money_set($data)
+    {
+        $player = Player::xuid($data->xuid)->first();
+        $player->money = $data->money;
+        $player->save();
+
+        return [
+            'status' => true,
+            'value' => $player->money,
+        ];
+    }
+
     public function money_add($data)
     {
         $player = Player::xuid($data->xuid)->first();
@@ -261,11 +278,6 @@ class Process
             'status' => true,
             'value' => $player->money,
         ];
-    }
-
-    public function getOnline()
-    {
-        return ['servers' => Events::$online, 'players' => Events::$online_players];
     }
 
     public function money_reduce($data)

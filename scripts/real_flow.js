@@ -382,6 +382,23 @@ mc.listen('onUseRespawnAnchor', (player, source) => {
 })
 
 if (syncMoney) {
+  mc.listen('beforeMoneySet', (xuid, value) => {
+    asyncEvent(
+      'money_add',
+      { xuid: xuid, value: value, origin: money.get(xuid) },
+      (response) => {
+        if (response.status) {
+          let pl = mc.getPlayer(xuid)
+          pl.tell('[+]您的余额已更新为:' + response.value)
+          log(pl.name + ' 经济增加至: ' + response.value + '，变动: ' + value)
+
+          money.set(xuid, response.value)
+        }
+      }
+    )
+    // return true
+  })
+
   mc.listen('beforeMoneyAdd', (xuid, value) => {
     asyncEvent(
       'money_add',
@@ -396,7 +413,7 @@ if (syncMoney) {
         }
       }
     )
-    return true
+    // return true
   })
 
   mc.listen('beforeMoneyReduce', (xuid, value) => {
@@ -413,7 +430,7 @@ if (syncMoney) {
         }
       }
     )
-    return true
+    // return true
   })
 }
 
