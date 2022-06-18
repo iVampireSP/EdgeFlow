@@ -46,7 +46,7 @@ let syncEndchest = config.syncEndchest ?? true
 let alert_msg = null
 
 if (!syncEndchest) {
-  log('末影箱同步没有启用，你的服务器将不会上传 NBT 数据到 Flow Cluster 中。')
+  log('同步没有启用，你的服务器将不会上传 NBT 数据到 Flow Cluster 中。')
 }
 
 const send = async (event, data) => {
