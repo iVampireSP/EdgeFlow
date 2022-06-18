@@ -384,7 +384,7 @@ mc.listen('onUseRespawnAnchor', (player, source) => {
 if (syncMoney) {
   mc.listen('beforeMoneySet', (xuid, value) => {
     asyncEvent(
-      'money_add',
+      'money_set',
       { xuid: xuid, value: value, origin: money.get(xuid) },
       (response) => {
         if (response.status) {
